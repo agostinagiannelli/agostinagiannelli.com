@@ -1,0 +1,72 @@
+---
+import Layout from "@/layouts/Layout.astro";
+
+import MailIcon from "@/components/icons/Mail.astro";
+import SectionContainer from "@/components/SectionContainer.astro";
+import Hero from "@/components/Hero.astro";
+import ContactForm from "@/components/ContactForm.astro";
+import Logos from "@/components/Technologies.astro";
+import Skills from "@/components/Skills.astro";
+import Block from "@/components/Block.astro";
+---
+
+<Layout title="Agostina Giannelli" description="">
+    <SectionContainer class="py-24 md:py-36">
+      <Hero />
+    </SectionContainer>
+
+    <SectionContainer class="space-y-36">
+      <SectionContainer id="skills">
+        <h2
+          class="flex items-center mb-6 text-3xl font-bold gap-x-3 text-black dark:text-white"
+        >
+          <span class="bg-purple-300 px-2 dark:text-black">Skills</span>
+        </h2>
+        <p class="text-lg mt-4 text-slate-600 dark:text-white">
+          Explore my expertise across various domains, each tailored to deliver
+          exceptional results.
+        </p>
+        <Skills />
+      </SectionContainer>
+
+      <SectionContainer id="technologies">
+        <h2
+          class="flex items-center mb-6 text-3xl font-bold gap-x-3 text-black dark:text-white"
+        >
+          <span class="bg-purple-300 px-2 dark:text-black">Technologies</span>
+        </h2>
+        <Logos />
+      </SectionContainer>
+
+      <Block />
+
+      <SectionContainer id="contact">
+        <h2
+          class="flex items-center mb-6 text-3xl font-bold gap-x-3 text-black dark:text-white"
+        >
+          <span class="bg-purple-300 px-2 dark:text-black">Contact</span>
+        </h2>
+        <div class="grid md:grid-cols-2 gap-10 mt-16">
+          <div>
+            <p class="text-lg leading-relaxed text-slate-600 dark:text-white">
+              Have something to say? Feel free to reach out. Fill up the form or
+              drop me an email.
+            </p>
+            <div class="mt-5">
+              <div
+                class="flex items-center mt-2 space-x-2 text-gray-600 dark:text-white"
+              >
+                <MailIcon class="w-4 h-4" name="uil:envelope" /><a
+                  href="mailto:agostinagiannelli@gmail.com"
+                  >agostinagiannelli@gmail.com</a
+                >
+              </div>
+            </div>
+          </div>
+          <div>
+            <ContactForm />
+          </div>
+        </div>
+      </SectionContainer>
+    </SectionContainer>
+</Layout>

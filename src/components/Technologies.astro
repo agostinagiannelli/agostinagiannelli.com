@@ -1,0 +1,38 @@
+---
+import AstroIcon from "@/components/icons/BrandAstro.astro";
+import CSSIcon from "@/components/icons/BrandCSS3.astro";
+import HTML5Icon from "@/components/icons/BrandHTML5.astro";
+import JavaScriptIcon from "@/components/icons/BrandJavaScript.astro";
+import NextJSIcon from "@/components/icons/BrandNextJS.astro";
+import ReactIcon from "@/components/icons/BrandReact.astro";
+import TailwindIcon from "@/components/icons/BrandTailwind.astro";
+import TypeScriptIcon from "@/components/icons/BrandTypeScript.astro";
+---
+
+<div class="mt-16">
+    <div class="flex gap-14 md:gap-20 items-center justify-center flex-wrap">
+        <HTML5Icon class="size-8 md:size-12 carousel-icon" name="simple-icons:html5" />
+        <CSSIcon class="size-8 md:size-12 carousel-icon" name="simple-icons:css3" />
+        <JavaScriptIcon class="size-8 md:size-12 carousel-icon" name="simple-icons:javascript" />
+        <TypeScriptIcon class="size-8 md:size-12 carousel-icon" name="simple-icons:typescript" />
+        <TailwindIcon class="size-8 md:size-12 carousel-icon" name="simple-icons:tailwindcss" />
+        <ReactIcon class="size-8 md:size-12 carousel-icon" name="simple-icons:react" />
+        <NextJSIcon class="size-8 md:size-12 carousel-icon" name="simple-icons:next-dot-js" />
+        <AstroIcon class="size-8 md:size-12 carousel-icon" name="simple-icons:react" />
+    </div>
+</div>
+
+<style>
+    @keyframes rotate {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    .carousel-icon {
+        animation: rotate 15s linear infinite;
+    }
+</style>
