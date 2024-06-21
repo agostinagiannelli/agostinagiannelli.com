@@ -8,53 +8,64 @@ import ContactForm from "@/components/ContactForm.astro";
 import Logos from "@/components/Technologies.astro";
 import Skills from "@/components/Skills.astro";
 import Block from "@/components/Block.astro";
+
+import "aos/dist/aos.css";
 ---
 
-<Layout title="Agostina Giannelli" description="Ecommerce | Digital Product | Project Management | Frontend Web Development">
-    <SectionContainer class="py-24 md:py-36">
-      <Hero />
-    </SectionContainer>
+<Layout
+  title="Agostina Giannelli"
+  description="Ecommerce | Digital Product | Project Management | Frontend Web Development"
+>
+  <SectionContainer class="py-24 md:py-36">
+    <Hero />
+  </SectionContainer>
 
-    <SectionContainer class="space-y-36">
+  <SectionContainer class="space-y-36">
+    <div data-aos="zoom-in-right">
       <SectionContainer id="skills">
         <h2
-          class="flex items-center mb-6 text-3xl font-bold gap-x-3 text-black dark:text-white"
+          class="flex items-center mb-6 text-3xl font-bold text-slate-800 gap-x-3 dark:text-slate-800"
         >
-          <span class="bg-purple-300 px-2 dark:text-black">Skills</span>
+          <span class="px-2 bg-purple-300">Skills</span>
         </h2>
-        <p class="text-lg mt-4 text-slate-600 dark:text-white">
+        <p class="mt-4 text-lg text-slate-800 dark:text-white">
           Explore my expertise across various domains, each tailored to deliver
           exceptional results.
         </p>
         <Skills />
       </SectionContainer>
+    </div>
 
+    <div data-aos="zoom-in-left">
       <SectionContainer id="technologies">
         <h2
-          class="flex items-center mb-6 text-3xl font-bold gap-x-3 text-black dark:text-white"
+          class="flex items-center mb-6 text-3xl font-bold text-slate-800 gap-x-3 dark:text-slate-800"
         >
-          <span class="bg-purple-300 px-2 dark:text-black">Technologies</span>
+          <span class="px-2 bg-purple-300">Technologies</span>
         </h2>
         <Logos />
       </SectionContainer>
+    </div>
 
+    <div data-aos="zoom-in-right">
       <Block />
+    </div>
 
+    <div data-aos="zoom-in-left">
       <SectionContainer id="contact">
         <h2
-          class="flex items-center mb-6 text-3xl font-bold gap-x-3 text-black dark:text-white"
+          class="flex items-center mb-6 text-3xl font-bold text-slate-800 gap-x-3 dark:text-slate-800"
         >
-          <span class="bg-purple-300 px-2 dark:text-black">Contact</span>
+          <span class="px-2 bg-purple-300">Contact</span>
         </h2>
-        <div class="grid md:grid-cols-2 gap-10 mt-16">
+        <div class="grid gap-10 mt-16 md:grid-cols-2">
           <div>
             <p class="text-lg leading-relaxed text-slate-600 dark:text-white">
-              Have something to say? Feel free to reach out. Fill up the form or
-              drop me an email.
+              Feel free to reach out. Fill up the form or drop me an email.
             </p>
             <div class="mt-5">
               <div
-                class="flex items-center mt-2 space-x-2 text-gray-600 dark:text-white"
+                class="flex items-center mt-2 space-x-2 text-slate-600 dark:text-white"
               >
                 <MailIcon class="w-4 h-4" name="uil:envelope" /><a
                   href="mailto:agostinagiannelli@gmail.com"
@@ -68,5 +79,12 @@ import Block from "@/components/Block.astro";
           </div>
         </div>
       </SectionContainer>
-    </SectionContainer>
+    </div>
+    
+  </SectionContainer>
 </Layout>
+
+<script>
+  import AOS from "aos";
+  AOS.init();
+</script>
