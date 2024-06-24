@@ -4,8 +4,8 @@ import Footer from "../components/Footer.astro";
 import { ViewTransitions } from "astro:transitions";
 
 const title = "Agostina Giannelli";
-const description =
-  "Ecommerce | Digital Product | Project Management | Frontend Web Development";
+const description = "Ecommerce | Digital Product | Project Management | Frontend Web Development";
+const url = "https://agostinagiannelli.com";
 ---
 
 <!doctype html>
@@ -17,7 +17,7 @@ const description =
     <meta name="description" content={description} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:url" content={Astro.url} />
+    <meta property="og:url" content={url} />
     <meta property="og:image" content="/og.png" />
     <meta property="og:type" content="website" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -25,7 +25,7 @@ const description =
     <link rel="apple-touch-icon" href="/favicon.png" sizes="180x180" />
     <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png" />
     <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png" />
-    <link rel="canonical" href={Astro.url} />
+    <link rel="canonical" href={url} />
     <meta name="generator" content={Astro.generator} />
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-STFV7JRENN"
