@@ -7,18 +7,28 @@ import NextJSIcon from "@/components/icons/BrandNextJS.astro";
 import ReactIcon from "@/components/icons/BrandReact.astro";
 import TailwindIcon from "@/components/icons/BrandTailwind.astro";
 import TypeScriptIcon from "@/components/icons/BrandTypeScript.astro";
+
+const TECHNOLOGIES = [
+    { name: "HTML5", icon: HTML5Icon },
+    { name: "CSS3", icon: CSSIcon },
+    { name: "JavaScript", icon: JavaScriptIcon },
+    { name: "TypeScript", icon: TypeScriptIcon },
+    { name: "Tailwind CSS", icon: TailwindIcon },
+    { name: "React", icon: ReactIcon },
+    { name: "Next.js", icon: NextJSIcon },
+    { name: "Astro", icon: AstroIcon },
+];
 ---
 
 <div class="mt-16">
-    <div class="flex flex-wrap items-center text-slate-800 dark:text-white gap-14 md:gap-20 text-center justify-evenly">
-        <HTML5Icon class="size-8 md:size-12 carousel-icon" />
-        <CSSIcon class="size-8 md:size-12 carousel-icon" />
-        <JavaScriptIcon class="size-8 md:size-12 carousel-icon" />
-        <TypeScriptIcon class="size-8 md:size-12 carousel-icon" />
-        <TailwindIcon class="size-8 md:size-12 carousel-icon" />
-        <ReactIcon class="size-8 md:size-12 carousel-icon" />
-        <NextJSIcon class="size-8 md:size-12 carousel-icon" />
-        <AstroIcon class="size-8 md:size-12 carousel-icon" />
+    <div
+        class="flex flex-wrap items-center text-slate-800 dark:text-white gap-12 md:gap-28 lg:gap-20 text-center justify-evenly"
+    >
+        {
+            TECHNOLOGIES.map(({ icon: Icon }) => (
+                <Icon class="size-8 md:size-12 carousel-icon" />
+            ))
+        }
     </div>
 </div>
 

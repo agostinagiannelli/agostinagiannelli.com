@@ -5,17 +5,17 @@ const navItems = [
   {
     title: "Skills",
     label: "skills",
-    url: "/#skills",
+    url: "#skills",
   },
   {
     title: "Technologies",
     label: "technologies",
-    url: "/#technologies",
+    url: "#technologies",
   },
   {
     title: "Contact",
     label: "contact",
-    url: "/#contact",
+    url: "#contact",
   },
 ];
 ---
@@ -27,19 +27,33 @@ const navItems = [
     class="flex items-center justify-center px-3 font-medium rounded-full text-slate-600 dark:text-slate-200"
   >
     {
-      navItems.map((link) => (
+      navItems.map(({ title, label, url }) => (
         <a
           class="relative block px-4 py-2 transition hover:text-purple-400 dark:hover:text-purple-400"
-          aria-label={link.label}
-          href={link.url}
+          aria-label={label}
+          href={url}
         >
-          {link.title}
+          {title}
         </a>
       ))
     }
     <ThemeToggle />
   </nav>
 </header>
+
+<style>
+  nav {
+    animation: nav-shadown 1s linear both;
+    animation-timeline: scroll();
+    animation-range: 0 100px;
+  }
+
+  @keyframes nav-shadown {
+    to {
+      @apply shadow-lg ring-1 backdrop-blur dark:bg-slate-800/90 bg-white/50 ring-white/10;
+    }
+  }
+</style>
 
 <script>
   document.addEventListener("astro:page-load", () => {
@@ -70,7 +84,6 @@ const navItems = [
       observer.observe(section);
     });
 
-    // Cleanup function
     document.onvisibilitychange = () => {
       if (document.visibilityState === "hidden") {
         observer.disconnect();
@@ -82,17 +95,3 @@ const navItems = [
     };
   });
 </script>
-
-<style>
-  nav {
-    animation: nav-shadown 1s linear both;
-    animation-timeline: scroll();
-    animation-range: 0 100px;
-  }
-
-  @keyframes nav-shadown {
-    to {
-      @apply shadow-lg ring-1 backdrop-blur dark:bg-slate-800/90 bg-white/50 ring-white/10;
-    }
-  }
-</style>

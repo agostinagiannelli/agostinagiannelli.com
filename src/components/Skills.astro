@@ -6,72 +6,56 @@ import CodeIcon from "@/components/icons/Code.astro";
 import GrowthIcon from "@/components/icons/Growth.astro";
 import LanguageIcon from "@/components/icons/Language.astro";
 
-const features = [
+const SKILLS = [
   {
     title: "Ecommerce",
-    description: "Experienced with Shopify, WooCommerce, Magento, VTEX, and PrestaShop.",
-    icon: "EcommerceIcon",
+    description:
+      "Experienced with Shopify, WooCommerce, Magento, VTEX, and PrestaShop.",
+    icon: EcommerceIcon,
   },
   {
     title: "Agile Methodologies",
-    description: "Proficient in product roadmaps, backlogs, sprints, and user stories.",
-    icon: "AgileIcon",
+    description:
+      "Proficient in product roadmaps, backlogs, sprints, and user stories.",
+    icon: AgileIcon,
   },
   {
     title: "Project Management",
-    description: "Skilled in project organization using tools like Trello and Jira.",
-    icon: "TrelloIcon",
+    description:
+      "Skilled in project organization using tools like Trello and Jira.",
+    icon: TrelloIcon,
   },
   {
     title: "Frontend Development",
     description: "Experienced in frontend technologies and frameworks.",
-    icon: "CodeIcon",
+    icon: CodeIcon,
   },
   {
     title: "Growth",
-    description: "Focused on organizational growth strategies and implementation.",
-    icon: "GrowthIcon",
+    description:
+      "Focused on organizational growth strategies and implementation.",
+    icon: GrowthIcon,
   },
   {
     title: "Languages",
     description: "Native Spanish speaker with C2 level proficiency in English.",
-    icon: "LanguageIcon",
+    icon: LanguageIcon,
   },
 ];
-
 ---
 
 <div class="grid gap-12 mt-16 sm:grid-cols-2 md:grid-cols-3 md:gap-16">
-  {
-    features.map((item) => (
-      <div class="flex items-start gap-4">
-        <div class="w-8 h-8 p-1 mt-1 transition rounded-full bg-slate-800 shrink-0 dark:bg-white md:hover:scale-105">
-          {item.icon === "EcommerceIcon" && (
-            <EcommerceIcon class="text-white dark:text-slate-800" />
-          )}
-          {item.icon === "AgileIcon" && (
-            <AgileIcon class="text-white dark:text-slate-800" />
-          )}
-          {item.icon === "TrelloIcon" && (
-            <TrelloIcon class="text-white dark:text-slate-800" />
-          )}
-          {item.icon === "CodeIcon" && (
-            <CodeIcon class="text-white dark:text-slate-800" />
-          )}
-          {item.icon === "GrowthIcon" && (
-            <GrowthIcon class="text-white dark:text-slate-800" />
-          )}
-          {item.icon === "LanguageIcon" && (
-            <LanguageIcon class="text-white dark:text-slate-800" />
-          )}
-        </div>
-        <div>
-          <h3 class="text-lg font-semibold">{item.title}</h3>{" "}
-          <p class="mt-2 leading-relaxed text-slate-600 dark:text-white">
-            {item.description}
-          </p>
-        </div>
+  {SKILLS.map(({ title, description, icon: Icon }) => (
+    <div class="flex items-start gap-4">
+      <div class="w-8 h-8 p-1 mt-1 transition rounded-full bg-slate-800 shrink-0 dark:bg-white md:hover:scale-105">
+        <Icon class="text-white dark:text-slate-800" />
       </div>
-    ))
-  }
+      <div>
+        <h3 class="text-lg font-semibold">{title}</h3>
+        <p class="mt-2 leading-relaxed text-slate-600 dark:text-white">
+          {description}
+        </p>
+      </div>
+    </div>
+  ))}
 </div>

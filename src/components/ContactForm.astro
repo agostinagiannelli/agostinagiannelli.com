@@ -6,7 +6,6 @@ import Button from "@/components/Button.astro";
   action="https://api.web3forms.com/submit"
   method="POST"
   id="form"
-  class="needs-validation"
   novalidate
 >
   <input
@@ -14,9 +13,11 @@ import Button from "@/components/Button.astro";
     name="access_key"
     value="4b4f06ff-917d-45d4-abbc-8102beddff06"
   />
-  <input type="checkbox" class="hidden" style="display:none" name="botcheck" />
+  <input type="checkbox" class="hidden" style="display:none" />
   <div class="mb-5">
     <input
+      id="name"
+      name="name"
       type="text"
       placeholder="Full Name"
       required
@@ -29,11 +30,11 @@ import Button from "@/components/Button.astro";
     </div>
   </div>
   <div class="mb-5">
-    <label for="email_address" class="sr-only">Email Address</label><input
-      id="email_address"
+    <input
+      id="email"
+      name="email"
       type="email"
       placeholder="Email Address"
-      name="email"
       required
       class="bg-white w-full px-4 py-3 border placeholder:text-slate-800 rounded-xl outline-none focus:ring-4 border-slate-300 focus:border-slate-600 ring-slate-100
     dark:bg-slate-900 dark:text-white dark:placeholder:text-white dark:border-slate-800 dark:focus:border-slate-400 dark:ring-slate-800"
@@ -47,9 +48,10 @@ import Button from "@/components/Button.astro";
   </div>
   <div class="mb-3">
     <textarea
+      id="message"
       name="message"
-      required
       placeholder="Your Message"
+      required
       class="bg-white w-full px-4 py-3 border placeholder:text-slate-800 rounded-xl outline-none focus:ring-4 border-slate-300 focus:border-slate-600 ring-slate-100
     dark:bg-slate-900 dark:text-white dark:placeholder:text-white dark:border-slate-800 dark:focus:border-slate-400 dark:ring-slate-800"
     ></textarea>
@@ -57,7 +59,7 @@ import Button from "@/components/Button.astro";
       Please enter your message.
     </div>
   </div>
-  <Button type="submit" size="lg" block>Send Message</Button>
+  <Button type="submit">Send Message</Button>
   <div id="result" class="mt-3 text-center"></div>
 </form>
 
@@ -77,7 +79,7 @@ import Button from "@/components/Button.astro";
 
   .is-invalid,
   .was-validated :invalid {
-    border-color: #dc3545;
+    border-color: #f87171;
   }
 </style>
 
@@ -89,14 +91,17 @@ import Button from "@/components/Button.astro";
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       form.classList.add("was-validated");
+
       if (!form.checkValidity()) {
         form.querySelectorAll(":invalid")[0].focus();
         return;
       }
+
       const formData = new FormData(form);
       const object = Object.fromEntries(formData);
       const json = JSON.stringify(object);
 
+      result.classList.add("text-slate-800", "dark:text-white");
       result.innerHTML = "Sending...";
 
       fetch("https://api.web3forms.com/submit", {
@@ -110,24 +115,22 @@ import Button from "@/components/Button.astro";
         .then(async (response) => {
           let json = await response.json();
           if (response.status == 200) {
-            result.classList.add("text-green-500");
-            result.innerHTML = json.message;
+            result.innerHTML = "Thanks for your message! I'll reply shortly.";
           } else {
             console.log(response);
-            result.classList.add("text-red-500");
-            result.innerHTML = json.message;
+            result.innerHTML = "Something went wrong. Please try again.";
           }
         })
         .catch((error) => {
           console.log(error);
-          result.innerHTML = "Something went wrong!";
+          result.innerHTML = "Something went wrong. Please try again.";
         })
-        .then(function () {
+        .then(() => {
           form.reset();
           form.classList.remove("was-validated");
           setTimeout(() => {
-            result.style.display = "none";
-          }, 5000);
+            result.innerHTML = "";
+          }, 3000);
         });
     });
   });

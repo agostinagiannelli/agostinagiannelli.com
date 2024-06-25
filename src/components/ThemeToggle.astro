@@ -58,7 +58,6 @@ const THEMES = ["Light", "Dark", "Auto"];
 </style>
 
 <script is:inline>
-  let remove = null;
   const matchMedia = window.matchMedia("(prefers-color-scheme: dark)");
   const themesMenu = document.getElementById("themes-menu");
 
@@ -66,50 +65,38 @@ const THEMES = ["Light", "Dark", "Auto"];
     if (typeof localStorage !== "undefined") {
       return localStorage.getItem("theme") ?? "auto";
     }
-
-    return window.matchMedia("(prefers-color-scheme: dark)").matches
-      ? "dark"
-      : "light";
+    return matchMedia.matches ? "dark" : "light";
   };
 
-  const updateIcon = (themePreference) => {
+  const updateIcons = (themePreference) => {
     document.querySelectorAll(".theme-toggle-icon").forEach((element) => {
       element.style.scale = element.id === themePreference ? "1" : "0";
     });
   };
 
-  const updateTheme = () => {
-    if (remove != null) {
-      remove();
-    }
-    matchMedia.addEventListener("change", updateTheme);
-    remove = () => {
-      matchMedia.removeEventListener("change", updateTheme);
-    };
-
+  const applyTheme = () => {
     const themePreference = getThemePreference();
     const isDark =
       themePreference === "dark" ||
       (themePreference === "auto" && matchMedia.matches);
-
-    updateIcon(themePreference);
-    document.documentElement.classList[isDark ? "add" : "remove"]("dark");
+    updateIcons(themePreference);
+    document.documentElement.classList.toggle("dark", isDark);
   };
 
-  updateTheme();
+  matchMedia.addEventListener("change", applyTheme);
+  applyTheme();
 
   document.addEventListener("click", () => themesMenu.classList.remove("open"));
 
   document.getElementById("theme-toggle-btn").addEventListener("click", (e) => {
     e.stopPropagation();
-    const isClosed = !themesMenu.classList.contains("open");
-    themesMenu.classList[isClosed ? "add" : "remove"]("open");
+    themesMenu.classList.toggle("open");
   });
 
   document.querySelectorAll(".themes-menu-option").forEach((element) => {
     element.addEventListener("click", (e) => {
       localStorage.setItem("theme", e.target.innerText.toLowerCase().trim());
-      updateTheme();
+      applyTheme();
     });
   });
 </script>
