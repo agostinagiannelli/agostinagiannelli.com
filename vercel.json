@@ -1,10 +1,9 @@
 {
-    "redirects": [
+    "routes": [
         {
-            "source": "/(.*)",
-            "destination": "/",
-            "permanent": false,
-            "statusCode": 307
+            "src": "/(.*)",
+            "status": 404,
+            "dest": "/"
         }
     ]
 }
