@@ -1,12 +1,10 @@
 {
-    "routes": [
+    "redirects": [
         {
-            "handle": "filesystem"
-        },
-        {
-            "src": "/(.*)",
-            "status": 404,
-            "destination": "/"
+            "source": "/(.*)",
+            "destination": "/",
+            "permanent": false,
+            "statusCode": 307
         }
     ]
 }
