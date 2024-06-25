@@ -54,9 +54,7 @@ const { description, title, url } = Astro.props;
     >
     </div>
     <Header />
-    <main class="p-6">
-      <slot />
-    </main>
+    <slot />
     <Footer />
 
     <style is:global>
@@ -87,12 +85,6 @@ const { description, title, url } = Astro.props;
         body {
           color: rgba(255, 255, 255, 0.9);
         }
-      }
-
-      #header-nav {
-        animation: blur linear both 0.5s;
-        animation-timeline: scroll();
-        animation-range: 0 500px;
       }
 
       @keyframes blur {

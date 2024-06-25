@@ -1,44 +1,44 @@
 ---
-import EcommerceIcon from "@/components/icons/Ecommerce.astro";
 import AgileIcon from "@/components/icons/Agile.astro";
-import TrelloIcon from "@/components/icons/BrandTrello.astro";
 import CodeIcon from "@/components/icons/Code.astro";
+import EcommerceIcon from "@/components/icons/Ecommerce.astro";
 import GrowthIcon from "@/components/icons/Growth.astro";
 import LanguageIcon from "@/components/icons/Language.astro";
+import TrelloIcon from "@/components/icons/BrandTrello.astro";
 
 const SKILLS = [
   {
-    title: "Ecommerce",
-    description:
-      "Experienced with Shopify, WooCommerce, Magento, VTEX, and PrestaShop.",
-    icon: EcommerceIcon,
-  },
-  {
     title: "Agile Methodologies",
     description:
-      "Proficient in product roadmaps, backlogs, sprints, and user stories.",
+      "Adept at steering digital product development through effective roadmap planning, backlog management, and user stories implementation.",
     icon: AgileIcon,
   },
   {
     title: "Project Management",
     description:
-      "Skilled in project organization using tools like Trello and Jira.",
+      "Demonstrated strong project management skills, ensuring organized and efficient execution of initiatives while maintaining clear communication and timelines.",
     icon: TrelloIcon,
-  },
-  {
-    title: "Frontend Development",
-    description: "Experienced in frontend technologies and frameworks.",
-    icon: CodeIcon,
   },
   {
     title: "Growth",
     description:
-      "Focused on organizational growth strategies and implementation.",
+      "Proven ability to translate business goals into strategic growth initiatives, leveraging technical expertise and business acumen to drive sustainable business expansion.",
     icon: GrowthIcon,
   },
   {
+    title: "Ecommerce",
+    description:
+      "Over a decade ensuring seamless integration and robust functionality across multiple platforms. Experienced with Shopify, WooCommerce, Magento, VTEX, and PrestaShop.",
+    icon: EcommerceIcon,
+  },
+  {
+    title: "Frontend Development",
+    description: "Background in frontend development, contributing to user-centric product designs that enhance customer experiences and align with business objectives.",
+    icon: CodeIcon,
+  },
+  {
     title: "Languages",
-    description: "Native Spanish speaker with C2 level proficiency in English.",
+    description: "Native Spanish speaker with a C2 level proficiency in English, facilitating seamless communication and collaboration across international teams and projects.",
     icon: LanguageIcon,
   },
 ];
@@ -51,7 +51,7 @@ const SKILLS = [
         <Icon class="text-white dark:text-slate-800" />
       </div>
       <div>
-        <h3 class="text-lg font-semibold">{title}</h3>
+        <h3 class="text-lg font-semibold text-slate-800 dark:text-white">{title}</h3>
         <p class="mt-2 leading-relaxed text-slate-600 dark:text-white">
           {description}
         </p>

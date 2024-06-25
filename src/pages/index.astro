@@ -1,6 +1,5 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-
 import MailIcon from "@/components/icons/Mail.astro";
 import SectionContainer from "@/components/SectionContainer.astro";
 import Hero from "@/components/Hero.astro";
@@ -8,8 +7,6 @@ import ContactForm from "@/components/ContactForm.astro";
 import Logos from "@/components/Technologies.astro";
 import Skills from "@/components/Skills.astro";
 import Block from "@/components/Block.astro";
-
-import "aos/dist/aos.css";
 ---
 
 <Layout
@@ -17,76 +14,63 @@ import "aos/dist/aos.css";
   description="Ecommerce | Digital Product | Project Management | Frontend Web Development"
   url="https://agostinagiannelli.com"
 >
-  <SectionContainer class="py-24 md:py-36">
-    <div data-aos="fade-up">
-      <Hero />
-    </div>
-  </SectionContainer>
+  <main class="p-6">
+    <SectionContainer class="py-24 md:py-36">
+        <Hero />
+    </SectionContainer>
 
-  <SectionContainer class="space-y-36">
-    <div data-aos="fade-up">
-      <SectionContainer id="skills">
-        <h2
-          class="flex items-center mb-6 text-3xl font-bold text-slate-800 gap-x-3 dark:text-slate-800"
-        >
-          <span class="px-2 bg-purple-300">Skills</span>
-        </h2>
-        <p class="mt-4 text-lg text-slate-800 dark:text-white">
-          Explore my expertise across various domains, each tailored to deliver
-          exceptional results.
-        </p>
-        <Skills />
-      </SectionContainer>
-    </div>
+    <SectionContainer class="space-y-36">
+        <SectionContainer id="skills">
+          <h2
+            class="flex items-center mb-6 text-3xl font-bold text-slate-800 gap-x-3 dark:text-slate-800"
+          >
+            <span class="px-2 bg-purple-300">Skills</span>
+          </h2>
+          <p class="mt-4 text-lg text-slate-800 dark:text-white">
+            Explore my expertise across various domains, each tailored to
+            deliver exceptional results.
+          </p>
+          <Skills />
+        </SectionContainer>
 
-    <div data-aos="fade-up">
-      <SectionContainer id="technologies">
-        <h2
-          class="flex items-center mb-6 text-3xl font-bold text-slate-800 gap-x-3 dark:text-slate-800"
-        >
-          <span class="px-2 bg-purple-300">Technologies</span>
-        </h2>
-        <Logos />
-      </SectionContainer>
-    </div>
+        <SectionContainer id="technologies">
+          <h2
+            class="flex items-center mb-6 text-3xl font-bold text-slate-800 gap-x-3 dark:text-slate-800"
+          >
+            <span class="px-2 bg-purple-300">Technologies</span>
+          </h2>
+          <Logos />
+        </SectionContainer>
 
-    <div data-aos="fade-up">
-      <Block />
-    </div>
+        <Block />
 
-    <div data-aos="fade-up">
-      <SectionContainer id="contact">
-        <h2
-          class="flex items-center mb-6 text-3xl font-bold text-slate-800 gap-x-3 dark:text-slate-800"
-        >
-          <span class="px-2 bg-purple-300">Contact</span>
-        </h2>
-        <div class="grid gap-10 mt-16 md:grid-cols-2">
-          <div>
-            <p class="text-lg leading-relaxed text-slate-600 dark:text-white">
-              Feel free to reach out. Fill up the form or drop me an email.
-            </p>
-            <div class="mt-5">
-              <div
-                class="flex items-center mt-2 space-x-2 text-slate-600 dark:text-white"
-              >
-                <MailIcon class="w-4 h-4" name="uil:envelope" /><a
-                  href="mailto:agostinagiannelli@gmail.com"
-                  >agostinagiannelli@gmail.com</a
+        <SectionContainer id="contact">
+          <h2
+            class="flex items-center mb-6 text-3xl font-bold text-slate-800 gap-x-3 dark:text-slate-800"
+          >
+            <span class="px-2 bg-purple-300">Contact</span>
+          </h2>
+          <div class="grid gap-10 mt-16 md:grid-cols-2">
+            <div>
+              <p class="text-lg leading-relaxed text-slate-600 dark:text-white">
+                Feel free to reach out. Fill up the form or drop me an email.
+              </p>
+              <div class="mt-5">
+                <div
+                  class="flex items-center mt-2 space-x-2 text-slate-600 dark:text-white"
                 >
+                  <MailIcon class="w-4 h-4" name="uil:envelope" /><a
+                    href="mailto:agostinagiannelli@gmail.com"
+                    >agostinagiannelli@gmail.com</a
+                  >
+                </div>
               </div>
             </div>
+            <div>
+              <ContactForm />
+            </div>
           </div>
-          <div>
-            <ContactForm />
-          </div>
-        </div>
-      </SectionContainer>
-    </div>
-  </SectionContainer>
+        </SectionContainer>
+    </SectionContainer>
+  </main>
 </Layout>
-
-<script>
-  import AOS from "aos";
-  AOS.init();
-</script>
