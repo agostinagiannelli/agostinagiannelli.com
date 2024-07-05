@@ -1,4 +1,5 @@
 ---
+import "@fontsource-variable/bricolage-grotesque";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { ViewTransitions } from "astro:transitions";
@@ -47,7 +48,7 @@ const { description, title, url } = Astro.props;
     <ViewTransitions />
   </head>
 
-  <body class="relative font-MabryPro">
+  <body class="relative">
     <div
       class="absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-slate-50 dark:bg-slate-950
       bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
@@ -60,11 +61,10 @@ const { description, title, url } = Astro.props;
     <style is:global>
       :root {
         color-scheme: light dark;
-        --font-MabryPro: "MabryPro", sans-serif;
       }
 
       html {
-        font-family: var(--font-MabryPro);
+        font-family: "Bricolage Grotesque Variable", sans-serif;
         scroll-behavior: smooth;
       }
 
@@ -125,54 +125,6 @@ const { description, title, url } = Astro.props;
             border-radius: 9999px;
           }
         }
-      }
-
-      @font-face {
-        font-family: "MabryPro";
-        src: url("/fonts/MabryPro-Light.woff2") format("woff2");
-        font-weight: 300;
-        font-style: normal;
-        font-display: swap;
-      }
-
-      @font-face {
-        font-family: "MabryPro";
-        src: url("/fonts/MabryPro-Regular.woff2") format("woff2");
-        font-weight: 500;
-        font-style: normal;
-        font-display: swap;
-      }
-
-      @font-face {
-        font-family: "MabryPro";
-        src: url("/fonts/MabryPro-Italic.woff2") format("woff2");
-        font-weight: 500;
-        font-style: italic;
-        font-display: swap;
-      }
-
-      @font-face {
-        font-family: "MabryPro";
-        src: url("/fonts/MabryPro-Medium.woff2") format("woff2");
-        font-weight: 600;
-        font-style: normal;
-        font-display: swap;
-      }
-
-      @font-face {
-        font-family: "MabryPro";
-        src: url("/fonts/MabryPro-Bold.woff2") format("woff2");
-        font-weight: 700;
-        font-style: normal;
-        font-display: swap;
-      }
-
-      @font-face {
-        font-family: "MabryPro";
-        src: url("/fonts/MabryPro-Black.woff2") format("woff2");
-        font-weight: 900;
-        font-style: normal;
-        font-display: swap;
       }
     </style>
   </body>

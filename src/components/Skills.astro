@@ -33,26 +33,28 @@ const SKILLS = [
   },
   {
     title: "Frontend Development",
-    description: "Background in frontend development, contributing to user-centric product designs that enhance customer experiences and align with business objectives.",
+    description:
+      "Background in frontend development, contributing to user-centric product designs that enhance customer experiences and align with business objectives.",
     icon: CodeIcon,
   },
   {
     title: "Languages",
-    description: "Native Spanish speaker with a C2 level proficiency in English, facilitating seamless communication and collaboration across international teams and projects.",
+    description:
+      "Native Spanish speaker with a C2 level proficiency in English, facilitating seamless communication and collaboration across international teams and projects.",
     icon: LanguageIcon,
   },
 ];
 ---
 
-<div class="grid gap-12 mt-16 sm:grid-cols-2 md:grid-cols-3 md:gap-16">
+<div class="grid gap-12 mt-24 sm:grid-cols-2 md:grid-cols-3 md:gap-16">
   {SKILLS.map(({ title, description, icon: Icon }) => (
     <div class="flex items-start gap-4">
-      <div class="w-8 h-8 p-1 mt-1 transition rounded-full bg-slate-800 shrink-0 dark:bg-white md:hover:scale-105">
+      <div class="w-8 h-8 p-1 mt-1 transition rounded-xl bg-slate-800 shrink-0 dark:bg-white md:hover:scale-105">
         <Icon class="text-white dark:text-slate-800" />
       </div>
       <div>
         <h3 class="text-lg font-semibold text-slate-800 dark:text-white">{title}</h3>
-        <p class="mt-2 leading-relaxed text-slate-600 dark:text-white">
+        <p class="mt-2 leading-relaxed text-slate-500 dark:text-white">
           {description}
         </p>
       </div>
