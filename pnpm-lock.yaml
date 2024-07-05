@@ -14,9 +14,6 @@ importers:
       '@astrojs/tailwind':
         specifier: 5.1.0
         version: 5.1.0(astro@4.4.5(typescript@5.3.3))(tailwindcss@3.4.1)
-      '@fontsource-variable/bricolage-grotesque':
-        specifier: ^5.0.6
-        version: 5.0.6
       astro:
         specifier: 4.4.5
         version: 4.4.5(typescript@5.3.3)
@@ -484,9 +481,6 @@ packages:
     engines: {node: '>=12'}
     cpu: [x64]
     os: [win32]
-
-  '@fontsource-variable/bricolage-grotesque@5.0.6':
-    resolution: {integrity: sha512-vA/FxigkyVJ5s1La0iseED268UPdDfvb9HcCn+pivWsrVcZoPtyNvu3/IGB+l6NvgZP4YuwCEtB7ViyKgc3isg==}
 
   '@isaacs/cliui@8.0.2':
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
@@ -2695,8 +2689,6 @@ snapshots:
 
   '@esbuild/win32-x64@0.21.5':
     optional: true
-
-  '@fontsource-variable/bricolage-grotesque@5.0.6': {}
 
   '@isaacs/cliui@8.0.2':
     dependencies:
