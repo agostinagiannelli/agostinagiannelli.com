@@ -1,19 +1,15 @@
 ---
-import AstroIcon from "@/components/icons/BrandAstro.astro";
-import CSSIcon from "@/components/icons/BrandCSS3.astro";
 import HTML5Icon from "@/components/icons/BrandHTML5.astro";
+import CSSIcon from "@/components/icons/BrandCSS3.astro";
 import JavaScriptIcon from "@/components/icons/BrandJavaScript.astro";
-import NextJSIcon from "@/components/icons/BrandNextJS.astro";
 import ReactIcon from "@/components/icons/BrandReact.astro";
-import TailwindIcon from "@/components/icons/BrandTailwind.astro";
-import TypeScriptIcon from "@/components/icons/BrandTypeScript.astro";
+import NextJSIcon from "@/components/icons/BrandNextJS.astro";
+import AstroIcon from "@/components/icons/BrandAstro.astro";
 
 const TECHNOLOGIES = [
     { name: "HTML5", icon: HTML5Icon },
     { name: "CSS3", icon: CSSIcon },
     { name: "JavaScript", icon: JavaScriptIcon },
-    { name: "TypeScript", icon: TypeScriptIcon },
-    { name: "Tailwind CSS", icon: TailwindIcon },
     { name: "React", icon: ReactIcon },
     { name: "Next.js", icon: NextJSIcon },
     { name: "Astro", icon: AstroIcon },
@@ -22,7 +18,7 @@ const TECHNOLOGIES = [
 
 <div class="mt-16">
     <div
-        class="flex flex-wrap items-center text-slate-800 dark:text-white gap-12 md:gap-28 lg:gap-20 text-center justify-evenly"
+        class="flex flex-wrap items-center text-slate-800 dark:text-white gap-6 md:gap-28 lg:gap-20 text-center justify-evenly"
     >
         {
             TECHNOLOGIES.map(({ icon: Icon }) => (

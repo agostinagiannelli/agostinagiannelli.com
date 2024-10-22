@@ -1,52 +1,38 @@
 ---
-import AgileIcon from "@/components/icons/Agile.astro";
-import CodeIcon from "@/components/icons/Code.astro";
 import EcommerceIcon from "@/components/icons/Ecommerce.astro";
 import GrowthIcon from "@/components/icons/Growth.astro";
-import LanguageIcon from "@/components/icons/Language.astro";
-import TrelloIcon from "@/components/icons/BrandTrello.astro";
+import ProductIcon from "@/components/icons/Product.astro";
+import ProjectIcon from "@/components/icons/Project.astro";
 
 const SKILLS = [
   {
-    title: "Ecommerce",
+    title: "Strategic Ecommerce Growth",
     description:
-      "Over a decade of experience ensuring seamless integration and robust functionality across various platforms including Shopify, WooCommerce, Magento, VTEX, and PrestaShop.",
+      "Expert in developing ecommerce strategies that drive growth and modernise sales channels while enhancing customer engagement and experience.",
     icon: EcommerceIcon,
   },
   {
-    title: "Project Management",
+    title: "Conversion Rate Optimisation (CRO)",
     description:
-      "Demonstrated strong project management skills, ensuring organized and efficient execution of initiatives through agile methodologies while maintaining clear communication and timelines.",
-    icon: TrelloIcon,
-  },
-  {
-    title: "Business Growth",
-    description:
-      "Proven ability to transform business goals into strategic growth initiatives, leveraging technical expertise and business acumen for sustainable expansion.",
+      "Specialised in maximising revenue through data-driven insights and A/B testing, focusing on user behaviour to optimise conversion performance.",
     icon: GrowthIcon,
   },
   {
-    title: "Digital Product",
+    title: "User-Centric Product Development",
     description:
-      "Adept at steering digital product development through effective roadmap planning, backlog management, and implementation of user stories and A/B testing.",
-    icon: AgileIcon,
+      "Creates digital products prioritising user needs and experiences, leveraging feedback and behavioural analysis to boost customer satisfaction.",
+    icon: ProductIcon,
   },
   {
-    title: "Frontend Development",
+    title: "Agile Project Management",
     description:
-      "Background in frontend development, contributing to user-centric product designs that enhance customer experiences and align with business objectives.",
-    icon: CodeIcon,
-  },
-  {
-    title: "Languages",
-    description:
-      "Native Spanish speaker with a C2 level proficiency in English, facilitating seamless communication and collaboration across international teams and projects.",
-    icon: LanguageIcon,
+      "Skilled in working with cross-functional teams using agile methodologies, delivering projects on time while utilising data analytics to inform decisions and drive continuous growth.",
+    icon: ProjectIcon,
   },
 ];
 ---
 
-<div class="grid gap-12 mt-24 sm:grid-cols-2 md:grid-cols-3 md:gap-16">
+<div class="grid gap-12 mt-24 sm:grid-cols-2 md:gap-16">
   {
     SKILLS.map(({ title, description, icon: Icon }) => (
       <div class="flex items-start gap-4">

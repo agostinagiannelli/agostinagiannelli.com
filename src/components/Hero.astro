@@ -8,7 +8,7 @@ import MailIcon from "@/components/icons/Mail.astro";
 import DownloadIcon from "@/components/icons/Download.astro";
 ---
 
-<div class="max-w-xl">
+<div class="max-w-2xl">
   <div class="flex gap-4 mb-4">
     <Image
       class="rounded-full shadow-lg dark:border dark:border-slate-600"
@@ -32,45 +32,39 @@ import DownloadIcon from "@/components/icons/Download.astro";
   >
     Hey, I'm Agostina
   </h1>
-  <p
-    class="mt-6 text-xl tracking-tight text-slate-800 dark:text-slate-300 dark:[&>strong]:text-purple-300 [&>strong]:text-purple-400 [&>strong]:font-semibold"
+  <div
+    class="mt-6 space-y-4 text-xl tracking-tight text-slate-800 dark:text-slate-300 dark:[&>strong]:text-purple-300 [&>strong]:text-purple-400 [&>strong]:font-semibold"
   >
-    Over 10 years of experience in driving successful <strong
-      >ecommerce strategies</strong
-    >, with a proven ability to translate business goals into user-centric
-    digital products.
-  </p>
-  <p
-    class="mt-6 text-xl tracking-tight text-slate-800 dark:text-slate-300 dark:[&>strong]:text-purple-300 [&>strong]:text-purple-400 [&>strong]:font-semibold"
-  >
-    Expertise spans both <strong>business growth</strong> and
-    <strong>technical fields</strong>, focusing on conversion rate optimization
-    (CRO) and supported by a data-driven mindset that leverages user behaviour
-    analysis, A/B testing and UX principles.
-  </p>
-  <p
-    class="mt-6 text-xl tracking-tight text-slate-800 dark:text-slate-300 dark:[&>strong]:text-purple-300 [&>strong]:text-purple-400 [&>strong]:font-semibold"
-  >
-    Based in Madrid, Spain 🇪🇸.
-  </p>
+    <p>
+      With over a decade of experience in crafting ecommerce strategies and
+      optimizing conversion funnels, expertise spans <strong
+        >ecommerce strategy</strong
+      >,
+      <strong>conversion rate optimization (CRO)</strong>, and <strong
+        >data-driven decision-making</strong
+      >. Technical proficiency in web development ensures the delivery of
+      user-centered products that align with business goals.
+    </p>
+    <p>Based in Madrid, Spain 🇪🇸.</p>
+  </div>
   <div class="flex flex-wrap gap-3 mt-8">
-    <SocialPill href="https://linkedin.com/in/agostinagiannelli">
-      <LinkedInIcon class="size-4" />
-      LinkedIn
-    </SocialPill>
-    <SocialPill href="https://github.com/agostinagiannelli">
-      <GitHubIcon class="size-4" />
-      GitHub
-    </SocialPill>
-    <SocialPill href="mailto:agostinagiannelli@gmail.com">
-      <MailIcon class="size-4" />
-      Email
-    </SocialPill>
     <SocialPill
       href="https://drive.google.com/file/d/1gLCGyycMS9kac2zzbGWzx4VmaQomanjI/view"
     >
       <DownloadIcon class="size-4" />
       Download CV
+    </SocialPill>
+    <SocialPill href="mailto:agostinagiannelli@gmail.com">
+      <MailIcon class="size-4" />
+      Email
+      <SocialPill href="https://linkedin.com/in/agostinagiannelli">
+        <LinkedInIcon class="size-4" />
+        LinkedIn
+      </SocialPill>
+    </SocialPill>
+    <SocialPill href="https://github.com/agostinagiannelli">
+      <GitHubIcon class="size-4" />
+      GitHub
     </SocialPill>
   </div>
 </div>
