@@ -1,14 +1,14 @@
 ---
 import { Image } from "astro:assets";
 import Badge from "@/components/Badge.astro";
-import SocialPill from "@/components/SocialPill.astro";
-import LinkedInIcon from "@/components/icons/LinkedIn.astro";
-import GitHubIcon from "@/components/icons/GitHub.astro";
-import MailIcon from "@/components/icons/Mail.astro";
-import DownloadIcon from "@/components/icons/Download.astro";
+import SocialLink from "@/components/SocialLink.astro";
+import LinkedInIcon from "@/assets/icons/LinkedIn.astro";
+import GitHubIcon from "@/assets/icons/GitHub.astro";
+import MailIcon from "@/assets/icons/Mail.astro";
+import DownloadIcon from "@/assets/icons/Download.astro";
 ---
 
-<div class="max-w-2xl">
+<div class="max-w-3xl">
   <div class="flex gap-4 mb-4">
     <Image
       class="rounded-full shadow-lg dark:border dark:border-slate-600"
@@ -28,50 +28,47 @@ import DownloadIcon from "@/components/icons/Download.astro";
     </a>
   </div>
   <h1
-    class="text-4xl font-bold tracking-tight text-slate-800 dark:text-white sm:text-5xl"
+    class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter text-black dark:text-white"
   >
     Hey, I'm Agostina
   </h1>
   <p
-    class="mt-6 space-y-4 text-xl tracking-tight text-slate-800 dark:text-slate-300 dark:[&>strong]:text-purple-300 [&>strong]:text-purple-400 [&>strong]:font-semibold"
+    class="mt-6 space-y-4 text-lg tracking-tight text-slate-800 dark:text-slate-300 dark:[&>strong]:text-purple-300 [&>strong]:text-purple-400 [&>strong]:font-semibold"
   >
-    With over a decade of experience in launching ecommerce platforms and
-    optimizing conversion funnels, expertise spans <strong
-      >ecommerce strategy</strong
-    >,
-    <strong>conversion rate optimization (CRO)</strong>, and <strong
-      >data-driven decision-making</strong
-    >.
+    10+ years of experience in ecommerce strategy and conversion rate
+    optimisation (CRO), driving growth through data-driven, user-centric
+    solutions. A strong technical background in web development enables the
+    translation of business goals into impactful digital products.
+  </p>
+  <p
+    class="mt-6 space-y-4 text-lg tracking-tight text-slate-800 dark:text-slate-300 dark:[&>strong]:text-purple-300 [&>strong]:text-purple-400 [&>strong]:font-semibold"
+  >
+    Proficient in agile methodologies, A/B testing, and user behaviour analysis,
+    fostering effective collaboration across teams.
     <p
-      class="mt-6 space-y-4 text-xl tracking-tight text-slate-800 dark:text-slate-300 dark:[&>strong]:text-purple-300 [&>strong]:text-purple-400 [&>strong]:font-semibold"
+      class="mt-6 space-y-4 text-lg tracking-tight text-slate-800 dark:text-slate-300 dark:[&>strong]:text-purple-300 [&>strong]:text-purple-400 [&>strong]:font-semibold"
     >
-      Technical proficiency in web development ensures the delivery of
-      user-centric digital products that align with business goals.
-    </p>
-    <p
-      class="mt-6 space-y-4 text-xl tracking-tight text-slate-800 dark:text-slate-300 dark:[&>strong]:text-purple-300 [&>strong]:text-purple-400 [&>strong]:font-semibold"
-    >
-      Based in Madrid, Spain 🇪🇸.
+      Fluent in Spanish and English, based in Madrid, Spain 🇪🇸.
     </p>
     <div class="flex flex-wrap gap-3 mt-8">
-      <SocialPill
+      <SocialLink
         href="https://drive.google.com/file/d/1gLCGyycMS9kac2zzbGWzx4VmaQomanjI/view"
       >
         <DownloadIcon class="size-4" />
         Download CV
-      </SocialPill>
-      <SocialPill href="mailto:agostinagiannelli@gmail.com">
+      </SocialLink>
+      <SocialLink href="mailto:agostinagiannelli@gmail.com">
         <MailIcon class="size-4" />
         Email
-        <SocialPill href="https://linkedin.com/in/agostinagiannelli">
+        <SocialLink href="https://linkedin.com/in/agostinagiannelli">
           <LinkedInIcon class="size-4" />
           LinkedIn
-        </SocialPill>
-      </SocialPill>
-      <SocialPill href="https://github.com/agostinagiannelli">
+        </SocialLink>
+      </SocialLink>
+      <SocialLink href="https://github.com/agostinagiannelli">
         <GitHubIcon class="size-4" />
         GitHub
-      </SocialPill>
+      </SocialLink>
     </div>
   </p>
 </div>

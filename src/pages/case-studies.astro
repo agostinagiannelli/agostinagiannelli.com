@@ -1,0 +1,96 @@
+---
+import { getCollection } from "astro:content";
+import { Picture } from "astro:assets";
+import Layout from "@/layouts/Layout.astro";
+import Container from "@/components/Container.astro";
+import Heading1 from "@/components/Heading1.astro";
+import Block from "@/components/Block.astro";
+
+const caseStudies = await getCollection("case");
+---
+
+<Layout title="Agostina Giannelli • Case Studies">
+  <Container>
+    <Heading1
+      h1="Case Studies"
+      paragraph="Explore a selection of CRO case studies showcasing proven strategies and results"
+    />
+
+    <div id="unauthorized" class="mt-16 hidden">
+      <Block
+        h2="Glad You Stopped By"
+        paragraph="Case studies are password-protected. Want to explore?"
+        link="/login"
+        linkText="Login"
+      />
+    </div>
+
+    <div id="authorized" class="mt-16 hidden">
+      <ul class="grid gap-16 max-w-4xl mx-auto">
+        {
+          caseStudies.map(
+            (
+              entry: {
+                slug: string;
+                data: {
+                  image: { src: string; alt: string | null };
+                  category: string;
+                  title: string;
+                  subtitle: string;
+                };
+              },
+              index: number,
+            ) => (
+              <li>
+                <a href={`/case/${entry.slug}`}>
+                  <div class="grid md:grid-cols-2 gap-5 md:gap-10 items-center">
+                    <div class="relative flex flex-col items-center transition duration-500 ease-in-out transform shadow-xl overflow-hidden rounded-md group hover:-translate-y-1 hover:shadow-2xl">
+                      <Picture
+                        src={entry.data.image.src}
+                        alt={entry.data.image.alt}
+                        sizes="(max-width: 800px) 100vw, 800px"
+                        width={800}
+                        height={600}
+                        loading={index <= 2 ? "eager" : "lazy"}
+                        decoding={index <= 2 ? "sync" : "async"}
+                        class="w-full h-full rounded-md object-cover object-center transition duration-500 scale-100 group-hover:scale-105"
+                      />
+                    </div>
+                    <div>
+                      <span class="uppercase tracking-wider text-sm font-medium text-black dark:text-white">
+                        {entry.data.category}
+                      </span>
+
+                      <h2 class="text-3xl font-semibold leading-snug tracking-tight mt-2 text-black dark:text-white">
+                        {entry.data.title}
+                      </h2>
+                      <p class="text-slate-500 dark:text-slate-200 mt-2">
+                        {entry.data.subtitle}
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            ),
+          )
+        }
+      </ul>
+    </div>
+  </Container>
+
+  <script is:inline>
+    document.addEventListener("astro:page-load", () => {
+      const authorized = sessionStorage.getItem("authorized") === "true";
+      const authorizedDiv = document.getElementById("authorized");
+      const unauthorizedDiv = document.getElementById("unauthorized");
+
+      if (authorized) {
+        authorizedDiv.classList.remove("hidden");
+        unauthorizedDiv.classList.add("hidden");
+      } else {
+        authorizedDiv.classList.add("hidden");
+        unauthorizedDiv.classList.remove("hidden");
+      }
+    });
+  </script>
+</Layout>

@@ -1,14 +1,10 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import MailIcon from "@/components/icons/Mail.astro";
-import MapIcon from "@/components/icons/Map.astro";
-import SectionContainer from "@/components/SectionContainer.astro";
-import Headings from "@/components/Headings.astro";
+import Container from "@/components/Container.astro";
 import Hero from "@/components/Hero.astro";
-import Technologies from "@/components/Technologies.astro";
-import ContactForm from "@/components/ContactForm.astro";
 import Skills from "@/components/Skills.astro";
 import Block from "@/components/Block.astro";
+import Logos from "@/components/Logos.astro";
 ---
 
 <Layout
@@ -16,61 +12,15 @@ import Block from "@/components/Block.astro";
   description="Ecommerce | CRO | Digital Project Manager | Product Owner"
   url="https://agostinagiannelli.com"
 >
-  <main class="p-6">
-    <SectionContainer class="py-24 md:py-36">
-      <Hero />
-    </SectionContainer>
-
-    <SectionContainer class="space-y-36">
-      <SectionContainer id="skills">
-        <Headings
-          h2="Skills"
-          paragraph="Driving digital success through expertise in ecommerce and project management"
-        />
-        <Skills />
-      </SectionContainer>
-
-      <SectionContainer id="technologies">
-        <Headings
-          h2="Technologies"
-          paragraph="Empowering ecommerce solutions with cutting-edge tools and technologies"
-        />
-        <Technologies />
-      </SectionContainer>
-
-      <Block />
-
-      <SectionContainer id="contact">
-        <Headings h2="Contact" paragraph="Interested in connecting?" />
-        <div class="grid gap-10 mt-16 md:grid-cols-2">
-          <div>
-            <p class="text-lg tracking-tight text-slate-600 dark:text-white">
-              Whether it's for collaboration, opportunities, or just a friendly
-              chat, feel free to reach out. Use the contact form or
-              connect via email.
-            </p>
-            <div class="mt-5">
-              <div
-                class="flex items-center mt-2 space-x-2 text-slate-600 dark:text-white"
-              >
-                <MailIcon class="w-4 h-4" /><a
-                  href="mailto:agostinagiannelli@gmail.com"
-                  >agostinagiannelli@gmail.com</a
-                >
-              </div>
-              <div
-                class="flex items-center mt-2 space-x-2 text-slate-600 dark:text-white"
-              >
-                <MapIcon class="w-4 h-4" />
-                <p>Madrid, Spain</p>
-              </div>
-            </div>
-          </div>
-          <div>
-            <ContactForm />
-          </div>
-        </div>
-      </SectionContainer>
-    </SectionContainer>
-  </main>
+  <Container>
+    <Hero />
+    <Skills />
+    <Logos />
+    <Block
+      h2="Glad You Stopped By"
+      paragraph="Want to know more? Looking forward to hearing from you."
+      link="/contact"
+      linkText="Get in Touch"
+    />
+  </Container>
 </Layout>

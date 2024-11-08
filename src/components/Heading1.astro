@@ -1,0 +1,18 @@
+---
+const { h1, paragraph } = Astro.props;
+---
+
+<div class="mx-auto">
+    <div>
+        <h1
+            class="text-4xl text-center text-black tracking-tight font-bold dark:text-white"
+        >
+            {h1}
+        </h1>
+        <p
+            class="mt-4 text-center text-lg mx-auto text-slate-600 dark:text-white"
+        >
+            {paragraph}
+        </p>
+    </div>
+</div>

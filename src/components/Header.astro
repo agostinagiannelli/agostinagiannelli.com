@@ -1,33 +1,33 @@
 ---
 import ThemeToggle from "./ThemeToggle.astro";
 
-const navItems = [
+const ITEMS = [
   {
-    title: "Skills",
-    label: "skills",
-    url: "#skills",
-  },
-  {
-    title: "Technologies",
-    label: "technologies",
-    url: "#technologies",
+    title: "About",
+    label: "about",
+    url: "/",
   },
   {
     title: "Contact",
     label: "contact",
-    url: "#contact",
+    url: "/contact",
+  },
+  {
+    title: "Case Studies",
+    label: "caseStudies",
+    url: "/case-studies",
   },
 ];
 ---
 
 <header
-  class="fixed top-0 z-10 flex items-center justify-center w-full mx-auto mt-2"
+  class="fixed top-0 z-10 flex items-center justify-center w-full mx-auto mt-5"
 >
   <nav
-    class="flex items-center justify-center px-3 rounded-full text-slate-600 dark:text-slate-200"
+    class="flex items-center justify-center rounded text-slate-600 dark:text-slate-200"
   >
     {
-      navItems.map(({ title, label, url }) => (
+      ITEMS.map(({ title, label, url }) => (
         <a
           class="relative block px-4 py-2 transition hover:text-purple-400 dark:hover:text-purple-400"
           aria-label={label}
@@ -43,12 +43,12 @@ const navItems = [
 
 <style>
   nav {
-    animation: nav-shadown 1s linear both;
+    animation: nav-shadow 1s linear both;
     animation-timeline: scroll();
     animation-range: 0 100px;
   }
 
-  @keyframes nav-shadown {
+  @keyframes nav-shadow {
     to {
       @apply shadow-lg ring-1 backdrop-blur dark:bg-slate-800/90 bg-white/50 ring-white/10;
     }
@@ -57,41 +57,21 @@ const navItems = [
 
 <script>
   document.addEventListener("astro:page-load", () => {
-    const sections = document.querySelectorAll("section");
-    const navItems = document.querySelectorAll("header nav a");
+    const items = document.querySelectorAll("header nav a");
 
-    const callback = (entries: any[]) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          navItems.forEach((item) => {
-            if (item.getAttribute("aria-label") == entry.target.id) {
-              item.classList.add("text-purple-400", "dark:text-purple-200");
-            } else {
-              item.classList.remove("text-purple-400", "dark:text-purple-200");
-            }
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          items.forEach((item) => {
+            const isActive = item.getAttribute("aria-label") === entry.target.id;
+            item.classList.toggle("text-purple-400", isActive);
+            item.classList.toggle("dark:text-purple-200", isActive);
           });
-        }
-      });
-    };
-
-    const observer = new IntersectionObserver(callback, {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.3,
-    });
-
-    sections.forEach((section) => {
-      observer.observe(section);
-    });
-
-    document.onvisibilitychange = () => {
-      if (document.visibilityState === "hidden") {
-        observer.disconnect();
-      } else {
-        sections.forEach((section) => {
-          observer.observe(section);
         });
-      }
-    };
+      },
+      { threshold: 0.3 }
+    );
+
+    document.querySelectorAll("section").forEach((section) => observer.observe(section));
   });
 </script>

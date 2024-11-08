@@ -101,8 +101,8 @@ import Button from "@/components/Button.astro";
       const object = Object.fromEntries(formData);
       const json = JSON.stringify(object);
 
-      result.classList.add("text-slate-800", "dark:text-white");
-      result.innerHTML = "Sending...";
+      result.classList.add("dark:text-white");
+      result.innerHTML = "Sending message...";
 
       fetch("https://api.web3forms.com/submit", {
         method: "POST",

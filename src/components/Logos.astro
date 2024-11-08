@@ -1,0 +1,24 @@
+---
+const LOGOS = [
+  { src: "/logos/shopify.svg", alt: "Shopify" },
+  { src: "/logos/magento.svg", alt: "Magento" },
+  { src: "/logos/google-analytics.svg", alt: "Google Analytics" },
+  { src: "/logos/google-tag-manager.svg", alt: "Google Tag Manager" },
+  { src: "/logos/nosto.svg", alt: "Nosto" },
+  { src: "/logos/dynamic-yield.svg", alt: "Dynamic Yield" },
+  { src: "/logos/contentsquare.svg", alt: "Contentsquare" },
+  { src: "/logos/looker-studio.svg", alt: "Looker Studio" },
+  { src: "/logos/jira.svg", alt: "Jira" },
+  { src: "/logos/trello.svg", alt: "Trello" },
+];
+---
+
+<div class="overflow-hidden my-12">
+  <div class="relative flex items-center gap-24 animate-marqueeLeft">
+    {
+      LOGOS.map((logo) => (
+        <img src={logo.src} alt={logo.alt} class="size-40 md:size-48 dark:brightness-0 dark:invert dark:saturate-100 dark:contrast-200" />
+      ))
+    }
+  </div>
+</div>
