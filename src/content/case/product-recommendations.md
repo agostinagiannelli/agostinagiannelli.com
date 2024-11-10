@@ -2,6 +2,7 @@
 title: "Product Recommendations"
 subtitle: "Showcasing Bestsellers: Driving Engagement on the Homepage"
 category: "Personalization"
+order: 1
 link: "https://avon.uk.com/"
 tools: [Shopify, Dynamic Yield]
 image: {

@@ -7,6 +7,7 @@ const caseCollection = defineCollection({
     title: z.string(),
     subtitle: z.string(),
     category: z.string(),
+    order: z.number(),
     link: z.string(),
     tools: z.array(z.string()),
     image: z.object({
