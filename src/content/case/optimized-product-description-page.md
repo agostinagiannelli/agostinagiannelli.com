@@ -3,7 +3,6 @@ title: "Optimized Product Description Page"
 subtitle: "Clear and Compelling: Enhancing Product Descriptions for Conversions"
 category: "Product Description Page"
 order: 2
-link: "https://avon.uk.com/products/anew-protinol-power-serum"
 tools: [Shopify, Dynamic Yield, Contentsquare]
 image: {
     src: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-1-light.png",
