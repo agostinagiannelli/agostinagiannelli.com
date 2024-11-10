@@ -12,8 +12,8 @@ export default {
 			animation: {
 				'fade-in': 'fade-in 0.6s ease-out forwards',
 				rotateIcon: 'rotateIcon 15s infinite',
-				marqueeLeft: 'marqueeLeft 20s linear infinite',
-				marqueeRight: 'marqueeRight 20s linear infinite',
+				marqueeLeft: 'marqueeLeft 15s linear infinite',
+				marqueeRight: 'marqueeRight 15s linear infinite',
 				animationPaused: 'paused', //stops on hover
 				scrollerDown: 'scrollerDown 12s linear infinite',
 				scrollerUp: 'scrollerUp 12s linear infinite',
