@@ -8,7 +8,7 @@ const { category } = Astro.props;
     data-type={`${category.replace(/\s+/g, "-")}`}
   >
     <div
-      class="inline-flex items-center justify-center w-full px-3 py-1 text-xs font-semibold text-purple-400 uppercase bg-purple-100 rounded-full cursor-pointer outline dark:bg-slate-800 dark:text-white/80 backdrop-blur-3xl whitespace-nowrap"
+      class="inline-flex items-center justify-center w-full px-3 py-1 text-xs font-semibold text-purple-400 uppercase bg-purple-100 rounded-full cursor-pointer outline outline-1 dark:bg-slate-800 dark:text-white/80 whitespace-nowrap"
     >
       {category}
     </div>
