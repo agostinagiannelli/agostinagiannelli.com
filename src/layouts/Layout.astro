@@ -4,12 +4,6 @@ import Footer from "../components/Footer.astro";
 import { ViewTransitions } from "astro:transitions";
 import "@fontsource-variable/bricolage-grotesque";
 
-interface Props {
-  title: string;
-  description?: string;
-  url?: string;
-}
-
 const { description, title, url } = Astro.props;
 ---
 
