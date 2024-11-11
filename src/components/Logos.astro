@@ -1,24 +1,51 @@
 ---
-const LOGOS = [
-  { src: "/logos/shopify.svg", alt: "Shopify" },
-  { src: "/logos/magento.svg", alt: "Magento" },
-  { src: "/logos/google-analytics.svg", alt: "Google Analytics" },
-  { src: "/logos/google-tag-manager.svg", alt: "Google Tag Manager" },
-  { src: "/logos/nosto.svg", alt: "Nosto" },
-  { src: "/logos/dynamic-yield.svg", alt: "Dynamic Yield" },
-  { src: "/logos/contentsquare.svg", alt: "Contentsquare" },
-  { src: "/logos/looker-studio.svg", alt: "Looker Studio" },
-  { src: "/logos/jira.svg", alt: "Jira" },
-  { src: "/logos/trello.svg", alt: "Trello" },
-];
+import ShopifyLogo from "@/assets/logos/Shopify.astro";
+import ShopifyWhiteLogo from "@/assets/logos/ShopifyWhite.astro";
+import GoogleAnalyticsLogo from "@/assets/logos/GoogleAnalytics.astro";
+import GoogleTagManagerLogo from "@/assets/logos/GoogleTagManager.astro";
+import DynamicYieldLogo from "@/assets/logos/DynamicYield.astro";
+import NostoLogo from "@/assets/logos/Nosto.astro";
+import ContentSquareLogo from "@/assets/logos/ContentSquare.astro";
 ---
 
-<div class="overflow-hidden my-12">
-  <div class="relative flex items-center gap-24 animate-marqueeLeft">
-    {
-      LOGOS.map((logo) => (
-        <img src={logo.src} alt={logo.alt} class="size-40 md:size-48 dark:brightness-0 dark:invert dark:saturate-100 dark:contrast-200" />
-      ))
-    }
+<div class="my-24">
+  <h2 class="text-center text-slate-500 dark:text-white">
+    Proficient in a wide range of ecommerce and CRO tools to drive business
+    results
+  </h2>
+  <div
+    class="grid items-center gap-8 mt-10 md:grid-cols-2 lg:grid-cols-3 justify-items-center"
+  >
+    <div class="flex items-center justify-center w-48 h-12">
+      <ShopifyLogo alt="Shopify" class="h-10 dark:hidden" />
+      <ShopifyWhiteLogo alt="Shopify" class="hidden h-10 dark:block" />
+    </div>
+    <div class="flex items-center justify-center w-48 h-12">
+      <GoogleAnalyticsLogo
+        alt="Google Analytics"
+        class="h-10 dark:brightness-0 dark:invert"
+      />
+    </div>
+    <div class="flex items-center justify-center w-48 h-12">
+      <GoogleTagManagerLogo
+        alt="Google Tag Manager"
+        class="h-10 dark:brightness-0 dark:invert"
+      />
+    </div>
+    <div class="flex items-center justify-center w-48 h-12">
+      <DynamicYieldLogo
+        alt="Dynamic Yield"
+        class="h-10 dark:brightness-0 dark:invert"
+      />
+    </div>
+    <div class="flex items-center justify-center w-48 h-12">
+      <NostoLogo alt="Nosto" class="h-5 dark:brightness-0 dark:invert" />
+    </div>
+    <div class="flex items-center justify-center w-48 h-12">
+      <ContentSquareLogo
+        alt="Contentsquare"
+        class="h-10 dark:brightness-0 dark:invert"
+      />
+    </div>
   </div>
 </div>

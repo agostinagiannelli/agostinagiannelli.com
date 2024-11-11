@@ -1,7 +1,7 @@
 ---
 import ButtonLink from "./ButtonLink.astro";
 
-const { h2, paragraph, link, linkText } = Astro.props;
+const { h2, paragraph, href, text } = Astro.props;
 ---
 
 <div
@@ -16,6 +16,6 @@ const { h2, paragraph, link, linkText } = Astro.props;
         {paragraph}
     </p>
     <div class="flex mt-5">
-        <ButtonLink href={link}> {linkText} </ButtonLink>
+        <ButtonLink href={href}> {text} </ButtonLink>
     </div>
 </div>

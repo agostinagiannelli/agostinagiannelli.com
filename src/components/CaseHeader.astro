@@ -1,0 +1,37 @@
+---
+const { category, title, link, tools, description } = Astro.props;
+---
+
+<div class="max-w-3xl mx-auto text-black dark:text-white">
+    <p class="mb-3 text-sm font-medium tracking-wider uppercase">
+        {category}
+    </p>
+    <h1
+        class="text-4xl font-bold lg:text-5xl lg:tracking-tight lg:leading-tight"
+    >
+        {title}
+    </h1>
+    <div
+        class="flex flex-wrap-reverse items-center gap-2 mt-3 md:flex-nowrap text-slate-500 dark:text-white"
+    >
+        {
+            link && (
+                <a
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="relative leading-5 dark:after:bg-white after:bg-slate-500 after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer"
+                >
+                    → View Website
+                </a>
+            )
+        }
+        {link && <span class="hidden md:inline-block">•</span>}
+        <div class="flex flex-wrap w-auto gap-2">
+            {tools.map((tool: string) => <span>{tool}</span>)}
+        </div>
+    </div>
+</div>
+<div class="max-w-3xl mx-auto mt-6 prose prose-lg text-black dark:text-white">
+    {description}
+</div>

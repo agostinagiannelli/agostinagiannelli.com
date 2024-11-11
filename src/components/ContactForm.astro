@@ -21,11 +21,10 @@ import Button from "@/components/Button.astro";
       type="text"
       placeholder="Full Name"
       required
-      class="bg-white w-full px-4 py-3 border placeholder:text-slate-800 rounded-xl outline-none focus:ring-4 border-slate-300 focus:border-slate-600 ring-slate-100
-    dark:bg-slate-900 dark:text-white dark:placeholder:text-white dark:border-slate-800 dark:focus:border-slate-400 dark:ring-slate-800"
+      class="w-full px-4 py-3 bg-white border outline-none placeholder:text-slate-800 rounded-xl focus:ring-4 border-slate-300 focus:border-slate-600 ring-slate-100 dark:bg-slate-900 dark:text-white dark:placeholder:text-white dark:border-slate-800 dark:focus:border-slate-400 dark:ring-slate-800"
       name="name"
     />
-    <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+    <div class="mt-1 text-sm text-red-400 empty-feedback invalid-feedback">
       Please provide your full name.
     </div>
   </div>
@@ -36,13 +35,12 @@ import Button from "@/components/Button.astro";
       type="email"
       placeholder="Email Address"
       required
-      class="bg-white w-full px-4 py-3 border placeholder:text-slate-800 rounded-xl outline-none focus:ring-4 border-slate-300 focus:border-slate-600 ring-slate-100
-    dark:bg-slate-900 dark:text-white dark:placeholder:text-white dark:border-slate-800 dark:focus:border-slate-400 dark:ring-slate-800"
+      class="w-full px-4 py-3 bg-white border outline-none placeholder:text-slate-800 rounded-xl focus:ring-4 border-slate-300 focus:border-slate-600 ring-slate-100 dark:bg-slate-900 dark:text-white dark:placeholder:text-white dark:border-slate-800 dark:focus:border-slate-400 dark:ring-slate-800"
     />
-    <div class="empty-feedback text-red-400 text-sm mt-1">
+    <div class="mt-1 text-sm text-red-400 empty-feedback">
       Please provide your email address.
     </div>
-    <div class="invalid-feedback text-red-400 text-sm mt-1">
+    <div class="mt-1 text-sm text-red-400 invalid-feedback">
       Please provide a valid email address.
     </div>
   </div>
@@ -52,10 +50,9 @@ import Button from "@/components/Button.astro";
       name="message"
       placeholder="Your Message"
       required
-      class="bg-white w-full px-4 py-3 border placeholder:text-slate-800 rounded-xl outline-none focus:ring-4 border-slate-300 focus:border-slate-600 ring-slate-100
-    dark:bg-slate-900 dark:text-white dark:placeholder:text-white dark:border-slate-800 dark:focus:border-slate-400 dark:ring-slate-800"
+      class="w-full px-4 py-3 bg-white border outline-none placeholder:text-slate-800 rounded-xl focus:ring-4 border-slate-300 focus:border-slate-600 ring-slate-100 dark:bg-slate-900 dark:text-white dark:placeholder:text-white dark:border-slate-800 dark:focus:border-slate-400 dark:ring-slate-800"
     ></textarea>
-    <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+    <div class="mt-1 text-sm text-red-400 empty-feedback invalid-feedback">
       Please enter your message.
     </div>
   </div>
@@ -83,55 +80,4 @@ import Button from "@/components/Button.astro";
   }
 </style>
 
-<script is:inline>
-  document.addEventListener("astro:page-load", () => {
-    const form = document.getElementById("form");
-    const result = document.getElementById("result");
-
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      form.classList.add("was-validated");
-
-      if (!form.checkValidity()) {
-        form.querySelectorAll(":invalid")[0].focus();
-        return;
-      }
-
-      const formData = new FormData(form);
-      const object = Object.fromEntries(formData);
-      const json = JSON.stringify(object);
-
-      result.classList.add("dark:text-white");
-      result.innerHTML = "Sending message...";
-
-      fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: json,
-      })
-        .then(async (response) => {
-          let json = await response.json();
-          if (response.status == 200) {
-            result.innerHTML = "Thanks for your message! I'll reply shortly.";
-          } else {
-            console.log(response);
-            result.innerHTML = "Something went wrong. Please try again.";
-          }
-        })
-        .catch((error) => {
-          console.log(error);
-          result.innerHTML = "Something went wrong. Please try again.";
-        })
-        .then(() => {
-          form.reset();
-          form.classList.remove("was-validated");
-          setTimeout(() => {
-            result.innerHTML = "";
-          }, 3000);
-        });
-    });
-  });
-</script>
+<script src="../utils/contact.js"></script>

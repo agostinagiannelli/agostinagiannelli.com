@@ -5,6 +5,7 @@ import Container from "@/components/Container.astro";
 import Heading1 from "@/components/Heading1.astro";
 import Block from "@/components/Block.astro";
 import BadgeCategory from "@/components/BadgeCategory.astro";
+import CaseCard from "@/components/CaseCard.astro";
 
 const cases = await getCollection("case");
 
@@ -22,67 +23,30 @@ const categories = Array.from(new Set(cases.map((p) => p.data.category))).sort(
       paragraph="Explore a selection of CRO case studies showcasing proven strategies and results"
     />
 
-    <div id="unauthorized" class="mt-16 hidden">
+    <div id="unauthorized" class="hidden mt-16">
       <Block
         h2="Glad You Stopped By"
         paragraph="Case studies are password-protected. Want to explore?"
-        link="/login"
-        linkText="Login"
+        href="/login"
+        text="Login"
       />
     </div>
 
-    <div id="authorized" class="mt-16 hidden">
-      <div class="flex justify-center flex-wrap gap-2 mb-12">
-        <div
-          class="flex items-center transition md:justify-center md:hover:scale-105"
-        >
-          <BadgeCategory category="all" />
-        </div>
-        {
-          categories.map((category) => (
-            <div class="flex items-center transition md:justify-center md:hover:scale-105">
-              <BadgeCategory category={category} />
-            </div>
-          ))
-        }
+    <div id="authorized" class="hidden mt-16">
+      <div class="flex flex-wrap justify-center gap-2 mb-12 md:gap-4">
+        <BadgeCategory category="All" />
+        {categories.map((category) => <BadgeCategory category={category} />)}
       </div>
-      <ul class="grid md:grid-cols-2 lg:grid-cols-3 gap-14 md:gap-6">
+      <ul class="grid gap-16 md:grid-cols-2 lg:grid-cols-3 md:gap-6">
         {
-          cases.map(
-            (entry: {
-              slug: string;
-              data: {
-                title: string;
-                subtitle: string;
-                category: string;
-                image: { src: string; alt: string | null };
-              };
-            }) => (
-              <li class={`case ${entry.data.category.replace(/\s+/g, "-")}`}>
-                <a href={`/case/${entry.slug}`}>
-                  <div>
-                    <p class="uppercase tracking-wider text-sm font-medium text-black dark:text-white">
-                      {entry.data.category}
-                    </p>
-                    <h2 class="text-2xl font-semibold leading-snug tracking-tight mt-4 text-black dark:text-white">
-                      {entry.data.title}
-                    </h2>
-                    <p class="text-slate-500 dark:text-slate-200 mt-4">
-                      {entry.data.subtitle}
-                    </p>
-                    <div class="mt-4 text-slate-500 dark:text-white">
-                      <a
-                        href={`/case/${entry.slug}`}
-                        class="relative dark:after:bg-white after:bg-slate-500 after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer"
-                      >
-                        → Read Case Study
-                      </a>
-                    </div>
-                  </div>
-                </a>
-              </li>
-            ),
-          )
+          cases.map((entry) => (
+            <CaseCard
+              category={entry.data.category}
+              slug={entry.slug}
+              title={entry.data.title}
+              subtitle={entry.data.subtitle}
+            />
+          ))
         }
       </ul>
     </div>

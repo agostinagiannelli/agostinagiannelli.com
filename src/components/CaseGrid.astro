@@ -1,0 +1,29 @@
+---
+const { challenge, goal, hypothesis, implementation, outcome, keyLearnings } =
+    Astro.props;
+---
+
+<div class="grid gap-6 mt-6 md:grid-cols-2 lg:grid-cols-3">
+    {
+        [
+            { label: "Challenge", content: challenge, number: "01" },
+            { label: "Goal", content: goal, number: "02" },
+            { label: "Hypothesis", content: hypothesis, number: "03" },
+            { label: "Implementation", content: implementation, number: "04" },
+            { label: "Outcome", content: outcome, number: "05" },
+            { label: "Key Learnings", content: keyLearnings, number: "06" },
+        ].map(({ label, content, number }) => (
+            <div class="relative flex flex-col items-start p-6 overflow-hidden transition duration-500 ease-in-out transform bg-black border rounded-lg shadow-xl dark:bg-slate-900 border-slate-800 dark:border-slate-700 group hover:-translate-y-1">
+                <h4 class="mb-2 text-6xl font-bold tracking-tight text-slate-200 dark:text-white">
+                    {number}
+                </h4>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-slate-200 dark:text-white">
+                    {label}
+                </h5>
+                <p class="font-normal text-slate-400 dark:text-white">
+                    {content}
+                </p>
+            </div>
+        ))
+    }
+</div>

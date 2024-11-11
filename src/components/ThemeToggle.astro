@@ -28,7 +28,7 @@ const THEMES = ["Light", "Dark", "Auto"];
   >
     <ul>
       {
-        THEMES.map((theme) => (
+        THEMES.map((theme: string) => (
           <li class="themes-menu-option px-2 py-1.5 cursor-pointer hover:bg-neutral-400/40 dark:hover:bg-slate-500/50 rounded-sm">
             {theme}
           </li>
