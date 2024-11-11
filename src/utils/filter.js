@@ -7,7 +7,7 @@ document.addEventListener("astro:page-load", () => {
             element.style.display = "block";
         });
 
-        if (selectedCategory !== "all") {
+        if (selectedCategory !== "All") {
             const filteredCases = document.querySelectorAll(`.case:not(.${selectedCategory})`);
             filteredCases.forEach((element) => {
                 element.style.display = "none";
