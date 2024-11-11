@@ -12,7 +12,7 @@ const { category, title, link, tools, description } = Astro.props;
         {title}
     </h1>
     <div
-        class="flex flex-wrap-reverse items-center gap-2 mt-3 md:flex-nowrap text-slate-500 dark:text-white"
+        class="grid items-center grid-cols-1 gap-1 mt-3 md:gap-2 md:flex md:flex-nowrap text-slate-500 dark:text-white"
     >
         {
             link && (
@@ -20,18 +20,19 @@ const { category, title, link, tools, description } = Astro.props;
                     href={link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="lg:relative lg:leading-5 lg:dark:after:bg-white lg:after:bg-slate-500 lg:after:absolute lg:after:h-0.5 lg:after:w-0 after:bottom-0 lg:after:left-0 lg:hover:after:w-full lg:after:transition-all lg:after:duration-300 lg:cursor-pointer"
+                    class="md:order-1 order-2 lg:relative lg:leading-5 lg:dark:after:bg-white lg:after:bg-slate-500 lg:after:absolute lg:after:h-0.5 lg:after:w-0 after:bottom-0 lg:after:left-0 lg:hover:after:w-full lg:after:transition-all lg:after:duration-300 lg:cursor-pointer"
                 >
                     → View Website
                 </a>
             )
         }
-        {link && <span class="hidden md:inline-block">•</span>}
-        <div class="flex flex-wrap w-auto gap-2">
+        {link && <span class="hidden md:order-2 md:inline-block">•</span>}
+        <span class="flex flex-wrap order-1 gap-2 md:order-3">
             {tools.map((tool: string) => <span>{tool}</span>)}
-        </div>
+        </span>
     </div>
 </div>
+
 <div class="max-w-3xl mx-auto mt-6 prose prose-lg text-black dark:text-white">
     {description}
 </div>
