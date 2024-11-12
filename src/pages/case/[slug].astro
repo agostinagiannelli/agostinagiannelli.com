@@ -19,7 +19,7 @@ export async function getStaticPaths() {
 }
 
 const width =
-  entry.data.image.device === "desktop" ? "md:w-auto" : "md:w-[400px]";
+  entry.data.image.device === "desktop" ? "md:w-auto" : "md:w-[390px]";
 
 const browser =
   entry.data.image.device === "desktop" ? "lg:flex hidden" : "hidden";
@@ -30,7 +30,7 @@ const browser =
     <div id="unauthorized" class="hidden mt-36">
       <Block
         h2="Glad You Stopped By"
-        paragraph="Case studies are password-protected. Want to explore?"
+        paragraph="Case studies are password-protected."
         href="/login"
         text="Login"
       />

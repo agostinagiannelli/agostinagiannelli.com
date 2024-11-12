@@ -1,5 +1,7 @@
 ---
 const { width, browser, link, src, alt } = Astro.props;
+const className =
+    "object-cover w-full h-auto transition duration-500 transform group-hover:scale-105";
 ---
 
 <div
@@ -16,18 +18,10 @@ const { width, browser, link, src, alt } = Astro.props;
         {
             link ? (
                 <a href={link} target="_blank" rel="noopener noreferrer">
-                    <img
-                        src={src}
-                        alt={alt}
-                        class="object-cover w-full h-auto transition duration-500 transform group-hover:scale-105"
-                    />
+                    <img src={src} alt={alt} class={className} />
                 </a>
             ) : (
-                <img
-                    src={src}
-                    alt={alt}
-                    class="object-cover w-full h-auto transition duration-500 transform group-hover:scale-105"
-                />
+                <img src={src} alt={alt} class={className} />
             )
         }
     </div>
