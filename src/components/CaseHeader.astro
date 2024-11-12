@@ -2,17 +2,19 @@
 const { category, title, link, tools, description } = Astro.props;
 ---
 
-<div class="max-w-3xl mx-auto text-black dark:text-white">
-    <p class="mb-3 text-sm font-medium tracking-wider uppercase">
+<div class="max-w-3xl mx-auto">
+    <p
+        class="mb-3 text-sm font-medium tracking-wider uppercase text-slate-800 dark:text-slate-200"
+    >
         {category}
     </p>
     <h1
-        class="text-4xl font-bold lg:text-5xl lg:tracking-tight lg:leading-tight"
+        class="text-4xl font-bold text-black lg:text-5xl lg:tracking-tight lg:leading-tight dark:text-white"
     >
         {title}
     </h1>
     <div
-        class="grid items-center grid-cols-1 gap-1 mt-3 md:gap-2 md:flex md:flex-nowrap text-slate-500 dark:text-white"
+        class="grid items-center grid-cols-1 gap-1 mt-3 md:gap-2 md:flex md:flex-nowrap text-slate-500 dark:text-slate-200"
     >
         {
             link && (
@@ -20,7 +22,7 @@ const { category, title, link, tools, description } = Astro.props;
                     href={link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="md:order-1 order-2 lg:relative lg:leading-5 lg:dark:after:bg-white lg:after:bg-slate-500 lg:after:absolute lg:after:h-0.5 lg:after:w-0 after:bottom-0 lg:after:left-0 lg:hover:after:w-full lg:after:transition-all lg:after:duration-300 lg:cursor-pointer"
+                    class="md:order-1 order-2 lg:relative lg:leading-5 lg:dark:after:bg-slate-200 lg:after:bg-slate-500 lg:after:absolute lg:after:h-0.5 lg:after:w-0 after:bottom-0 lg:after:left-0 lg:hover:after:w-full lg:after:transition-all lg:after:duration-300 lg:cursor-pointer"
                 >
                     → View Website
                 </a>
@@ -33,6 +35,6 @@ const { category, title, link, tools, description } = Astro.props;
     </div>
 </div>
 
-<div class="max-w-3xl mx-auto mt-6 prose prose-lg text-black dark:text-white">
+<div class="max-w-3xl mx-auto mt-6 prose prose-lg text-slate-800 dark:text-slate-200">
     {description}
 </div>

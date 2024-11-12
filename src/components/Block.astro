@@ -5,14 +5,12 @@ const { h2, paragraph, href, text } = Astro.props;
 ---
 
 <div
-    class="flex flex-col items-center max-w-6xl p-6 mx-auto text-center bg-black rounded-lg md:px-20 md:py-20 dark:border dark:border-slate-800 dark:bg-slate-900 dark:text-white"
+    class="flex flex-col items-center max-w-6xl p-6 mx-auto text-center rounded-lg bg-slate-900 md:px-20 md:py-20 dark:border border-slate-600"
 >
-    <h2
-        class="text-2xl tracking-tight text-slate-200 dark:text-white md:text-5xl"
-    >
+    <h2 class="text-2xl tracking-tight text-slate-200 dark:text-white md:text-5xl">
         {h2}
     </h2>
-    <p class="mt-4 text-slate-400 dark:text-white md:text-lg">
+    <p class="mt-4 text-slate-400 dark:text-slate-200 md:text-lg">
         {paragraph}
     </p>
     <div class="flex mt-5">

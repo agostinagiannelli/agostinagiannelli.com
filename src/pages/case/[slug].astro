@@ -18,8 +18,11 @@ export async function getStaticPaths() {
   }));
 }
 
-const className =
-  entry.data.image.device === "desktop" ? "md:max-w-2xl" : "md:w-[360px]";
+const width =
+  entry.data.image.device === "desktop" ? "md:w-auto" : "md:w-[400px]";
+
+const browser =
+  entry.data.image.device === "desktop" ? "lg:flex hidden" : "hidden";
 ---
 
 <Layout title={`Agostina Giannelli • ${entry.data.title}`}>
@@ -52,7 +55,8 @@ const className =
       />
 
       <CaseImage
-        className={className}
+        width={width}
+        browser={browser}
         link={entry.data.link}
         src={entry.data.image.src}
         alt={entry.data.image.alt}
