@@ -6,7 +6,7 @@ category: "UX/UI Design"
 link: "https://avon.uk.com/"
 tools: [Shopify]
 image: {
-    src: ".././src/assets/img/mobile-first-design-implementation.png",
+    src: "img/mobile-first-design-implementation.png",
     alt: "Mobile-First Design Implementation",
     device: "mobile"
 }

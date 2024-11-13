@@ -6,7 +6,7 @@ category: "Personalisation"
 link: "https://avon.uk.com/"
 tools: [Shopify, Dynamic Yield]
 image: {
-    src: ".././src/assets/img/personalised-homepage-product-recommendations.png",
+    src: "img/personalised-homepage-product-recommendations.png",
     alt: "Personalised Homepage Product Recommendations",
     device: "mobile"
 }

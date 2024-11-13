@@ -6,7 +6,7 @@ category: "UX/UI Design"
 link: "https://avon.uk.com/"
 tools: [Shopify]
 image: {
-    src: ".././src/assets/img/search-bar-suggestions-and-first-matches.png",
+    src: "img/search-bar-suggestions-and-first-matches.png",
     alt: "Search Bar Suggestions and First Matches",
     device: "desktop"
 }

@@ -6,7 +6,7 @@ category: "New Features"
 link: "https://www.shopwithmyrep.co.uk/digital-skin-consultant"
 tools: [Ad-hoc Development]
 image: {
-    src: ".././src/assets/img/ai-powered-skincare-diagnostic-tool.png",
+    src: "img/ai-powered-skincare-diagnostic-tool.png",
     alt: "AI-Powered Skincare Diagnostic Tool",
     device: "desktop"
 }

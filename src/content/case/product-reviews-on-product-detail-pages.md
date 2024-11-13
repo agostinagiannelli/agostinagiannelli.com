@@ -6,7 +6,7 @@ category: "Content"
 link: "https://avon.uk.com/products/lash-genius-mascara"
 tools: [Shopify, Yotpo]
 image: {
-    src: ".././src/assets/img/product-reviews-on-product-detail-pages.png",
+    src: "img/product-reviews-on-product-detail-pages.png",
     alt: "Product Reviews on Product Detail Pages",
     device: "mobile"
 }

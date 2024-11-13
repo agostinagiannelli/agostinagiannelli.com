@@ -6,7 +6,7 @@ category: "Personalisation"
 link: "https://avon.uk.com/cart"
 tools: [Shopify, Dynamic Yield]
 image: {
-    src: ".././src/assets/img/recommended-products-in-cart.png",
+    src: "img/recommended-products-in-cart.png",
     alt: "Recommended Products in Cart",
     device: "desktop"
 }

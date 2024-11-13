@@ -6,7 +6,7 @@ category: "New Features"
 link: "https://www.sbs.com.ar/"
 tools: [VTEX]
 image: {
-    src: ".././src/assets/img/chatbot-for-product-assistance.png",
+    src: "img/chatbot-for-product-assistance.png",
     alt: "Chatbot for Product Assistance",
     device: "mobile"
 }

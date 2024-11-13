@@ -6,7 +6,7 @@ category: "Personalisation"
 link: "https://avon.uk.com/"
 tools: [Shopify, Dynamic Yield]
 image: {
-    src: ".././src/assets/img/recently-viewed-products-on-homepage.png",
+    src: "img/recently-viewed-products-on-homepage.png",
     alt: "Recently Viewed Products on Homepage",
     device: "mobile"
 }

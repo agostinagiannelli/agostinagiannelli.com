@@ -6,7 +6,7 @@ category: "Content"
 link: "https://avon.uk.com/products/anew-platinum-day-lifting-cream-spf25"
 tools: [Shopify]
 image: {
-    src: ".././src/assets/img/frequently-bought-together-recommendations.png",
+    src: "img/frequently-bought-together-recommendations.png",
     alt: "Frequently Bought Together Recommendations",
     device: "mobile"
 }

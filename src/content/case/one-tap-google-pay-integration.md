@@ -6,7 +6,7 @@ category: "Conversion Funnel"
 link: "https://avon.com.mt/products/avon-glimmerstick-eyeliner"
 tools: [Shopify]
 image: {
-    src: ".././src/assets/img/one-tap-google-pay-integration.png",
+    src: "img/one-tap-google-pay-integration.png",
     alt: "One-Tap Google Pay Integration",
     device: "desktop"
 }

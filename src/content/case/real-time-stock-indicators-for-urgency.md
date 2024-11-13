@@ -6,7 +6,7 @@ category: "UX/UI Design"
 link: "https://avonlebanonstore.com/collections/women-s-eau-de-parfum/products/tomorrow-for-her-eau-de-parfum"
 tools: [Shopify]
 image: {
-    src: ".././src/assets/img/real-time-stock-indicators-for-urgency.png",
+    src: "img/real-time-stock-indicators-for-urgency.png",
     alt: "Real-Time Stock Indicators for Urgency",
     device: "mobile"
 }

@@ -6,7 +6,7 @@ category: "A/B Testing"
 link: "https://avon.uk.com/products/anew-protinol-power-serum"
 tools: [Shopify, Dynamic Yield, Contentsquare]
 image: {
-    src: ".././src/assets/img/optimised-product-detail-pages.png",
+    src: "img/optimised-product-detail-pages.png",
     alt: "Optimised Product Detail Pages",
     device: "mobile"
 }

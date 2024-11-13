@@ -6,7 +6,7 @@ category: "A/B Testing"
 link: "https://avon.uk.com/collections/make-up"
 tools: [Shopify, Dynamic Yield, Contentsquare]
 image: {
-    src: ".././src/assets/img/intuitive-filters-on-product-listing-pages.png",
+    src: "img/intuitive-filters-on-product-listing-pages.png",
     alt: "Intuitive Filters on Product Listing Pages",
     device: "desktop"
 }
