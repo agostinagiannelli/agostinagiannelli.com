@@ -5,7 +5,7 @@ subtitle: "Tailored product recommendations on product listing pages to match us
 category: "Personalisation"
 tools: [Shopify, Nosto]
 image: {
-    src: "img/tailored-product-recommendations-on-plp.png",
+    src: "/img/tailored-product-recommendations-on-plp.png",
     alt: "Tailored Product Recommendations on PLP",
     device: "mobile"
 }

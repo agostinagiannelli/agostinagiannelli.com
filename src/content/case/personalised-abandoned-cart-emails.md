@@ -5,7 +5,7 @@ subtitle: "Sent targeted abandoned cart emails to re-engage customers and drive 
 category: "Personalisation"
 tools: [Shopify]
 image: {
-    src: "img/personalised-abandoned-cart-emails.png",
+    src: "/img/personalised-abandoned-cart-emails.png",
     alt: "Personalised Abandoned Cart Emails",
     device: "mobile"
 }

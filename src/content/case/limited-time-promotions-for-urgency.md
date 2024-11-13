@@ -5,7 +5,7 @@ subtitle: "Created limited-time promotions to generate urgency and drive faster 
 category: "Conversion Funnel"
 tools: [Shopify]
 image: {
-    src: "img/limited-time-promotions-for-urgency.png",
+    src: "/img/limited-time-promotions-for-urgency.png",
     alt: "Limited-Time Promotions for Urgency",
     device: "mobile"
 }

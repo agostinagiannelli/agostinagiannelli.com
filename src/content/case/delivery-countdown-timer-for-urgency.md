@@ -6,7 +6,7 @@ category: "UX/UI Design"
 link: "https://avon.uk.com/products/skin-so-soft-original-dry-oil-spray"
 tools: [Shopify]
 image: {
-    src: "img/delivery-countdown-timer-for-urgency.png",
+    src: "/img/delivery-countdown-timer-for-urgency.png",
     alt: "Delivery Countdown Timer for Urgency",
     device: "desktop"
 }

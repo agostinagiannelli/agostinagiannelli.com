@@ -6,7 +6,7 @@ category: "Content"
 link: "https://avon.com.mt/collections/skincare"
 tools: [Shopify]
 image: {
-    src: "img/skincare-products-by-skin-concern.png",
+    src: "/img/skincare-products-by-skin-concern.png",
     alt: "Skincare Products by Skin Concern",
     device: "desktop"
 }

@@ -6,7 +6,7 @@ category: "Conversion Funnel"
 link: "https://www.sbs.com.ar/checkout/#/cart"
 tools: [VTEX]
 image: {
-    src: "img/checkout-process-optimisation.png",
+    src: "/img/checkout-process-optimisation.png",
     alt: "Checkout Process Optimisation",
     device: "desktop"
 }

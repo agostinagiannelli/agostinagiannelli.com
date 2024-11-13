@@ -6,7 +6,7 @@ category: "A/B Testing"
 link: "https://avon.uk.com/"
 tools: [Shopify, Dynamic Yield, Contentsquare]
 image: {
-    src: "img/top-promotions-on-homepage.png",
+    src: "/img/top-promotions-on-homepage.png",
     alt: "Top Promotions on Homepage",
     device: "desktop"
 }

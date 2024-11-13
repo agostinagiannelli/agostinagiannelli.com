@@ -6,7 +6,7 @@ category: "New Features"
 link: "https://www.shopwithmyrep.co.uk/product/17122/ultra-satin-lipstick"
 tools: [Ad-hoc Development]
 image: {
-    src: "img/virtual-makeup-try-on-tool.png",
+    src: "/img/virtual-makeup-try-on-tool.png",
     alt: "Virtual Makeup Try-On Tool",
     device: "desktop"
 }

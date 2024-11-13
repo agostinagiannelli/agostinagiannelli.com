@@ -6,7 +6,7 @@ category: "Content"
 link: "https://avon.com.mt/collections/bath-shower/products/avon-care-avocado-body-wash"
 tools: [Shopify]
 image: {
-    src: "img/enhanced-product-discovery-on-pdp.png",
+    src: "/img/enhanced-product-discovery-on-pdp.png",
     alt: "Enhanced Product Discovery on PDP",
     device: "desktop"
 }
