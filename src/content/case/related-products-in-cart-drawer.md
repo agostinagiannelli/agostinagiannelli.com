@@ -5,7 +5,7 @@ subtitle: "Recommended related products in the cart drawer to increase average o
 category: "Personalisation"
 tools: [Shopify, Nosto]
 image: {
-    src: "/img/related-products-in-cart-drawer.png",
+    src: "/img/related-products-in-cart-drawer.svg",
     alt: "Related Products in Cart Drawer",
     device: "mobile"
 }

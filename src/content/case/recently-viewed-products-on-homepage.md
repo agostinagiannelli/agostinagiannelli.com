@@ -8,7 +8,7 @@ tools: [Shopify, Dynamic Yield]
 image: {
     src: "/img/recently-viewed-products-on-homepage.png",
     alt: "Recently Viewed Products on Homepage",
-    device: "mobile"
+    device: "desktop"
 }
 overview: "Showed previously viewed items on Avon UK's homepage for easy return. Displaying recent items enhances user experience and increases the likelihood of conversion."
 challenge: "Users were forgetting or overlooking products they previously viewed, leading to lower return visits and missed conversion opportunities."
