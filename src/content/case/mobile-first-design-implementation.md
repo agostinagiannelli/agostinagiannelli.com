@@ -1,5 +1,5 @@
 ---
-order: 7
+order: 6
 title: "Mobile-First Design Implementation"
 subtitle: "Implemented a mobile-first design to enhance user experience across all devices and screen sizes"
 category: "UX/UI Design"
