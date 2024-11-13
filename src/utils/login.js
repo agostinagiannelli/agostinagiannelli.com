@@ -13,7 +13,7 @@ document.addEventListener("astro:page-load", () => {
 
         const password = document.getElementById("password").value;
 
-        if (password === "hola") {
+        if (password === "hello") {
             sessionStorage.setItem("authorized", "true");
             window.location.href = "/case-studies";
         } else {
