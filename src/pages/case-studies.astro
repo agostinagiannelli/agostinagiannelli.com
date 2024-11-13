@@ -37,7 +37,7 @@ const categories = Array.from(new Set(cases.map((p) => p.data.category))).sort(
         <BadgeCategory category="All" />
         {categories.map((category) => <BadgeCategory category={category} />)}
       </div>
-      <ul class="grid gap-16 md:grid-cols-2 lg:grid-cols-3 md:gap-6">
+      <ul class="grid gap-16 md:grid-cols-2 lg:grid-cols-3">
         {
           cases.map((entry) => (
             <CaseCard

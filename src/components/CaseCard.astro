@@ -2,7 +2,7 @@
 const { category, slug, title, subtitle } = Astro.props;
 ---
 
-<li class={`case ${category.replace(/\s+/g, "-")}`}>
+<li class={`case ${category.replace(/[\s/]+/g, "-")}`}>
   <a href={`/case/${slug}`}>
     <div>
       <p

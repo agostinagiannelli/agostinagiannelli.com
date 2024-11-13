@@ -2,10 +2,10 @@ import { z, defineCollection } from 'astro:content';
 
 const caseCollection = defineCollection({
   schema: z.object({
+    order: z.number(),
     title: z.string(),
     subtitle: z.string(),
     category: z.string(),
-    order: z.number(),
     link: z.string().optional(),
     tools: z.array(z.string()),
     image: z.object({
@@ -13,13 +13,11 @@ const caseCollection = defineCollection({
       alt: z.string(),
       device: z.string(),
     }),
-    description: z.string(),
+    overview: z.string(),
     challenge: z.string(),
-    goal: z.string(),
     hypothesis: z.string(),
     implementation: z.string(),
     outcome: z.string(),
-    keyLearnings: z.string(),
   }),
 });
 

@@ -1,5 +1,5 @@
 ---
-const { category, title, link, tools, description } = Astro.props;
+const { category, title, link, tools, overview } = Astro.props;
 ---
 
 <div class="max-w-3xl mx-auto">
@@ -36,5 +36,5 @@ const { category, title, link, tools, description } = Astro.props;
 </div>
 
 <div class="max-w-3xl mx-auto mt-6 prose prose-lg text-slate-800 dark:text-slate-200">
-    {description}
+    {overview}
 </div>
