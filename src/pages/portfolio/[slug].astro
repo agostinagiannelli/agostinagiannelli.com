@@ -4,15 +4,15 @@ import Layout from "@/layouts/Layout.astro";
 import Container from "@/components/Container.astro";
 import ButtonLink from "@/components/ButtonLink.astro";
 import Block from "@/components/Block.astro";
-import CaseImage from "@/components/CaseImage.astro";
-import CaseGrid from "@/components/CaseGrid.astro";
-import CaseHeader from "@/components/CaseHeader.astro";
+import PortfolioImage from "@/components/PortfolioImage.astro";
+import PortfolioGrid from "@/components/PortfolioGrid.astro";
+import PortfolioHeader from "@/components/PortfolioHeader.astro";
 
 const { entry } = Astro.props;
 
 export async function getStaticPaths() {
-  const cases = await getCollection("case");
-  return cases.map((entry: { [x: string]: any; slug: string }) => ({
+  const portfolio = await getCollection("portfolio");
+  return portfolio.map((entry: { [x: string]: any; slug: string }) => ({
     params: { slug: entry.slug },
     props: { entry },
   }));
@@ -30,14 +30,14 @@ const browser =
     <div id="unauthorized" class="hidden mt-36">
       <Block
         h2="Glad You Stopped By"
-        paragraph="Case studies are password-protected."
+        paragraph="Portfolio is password-protected."
         href="/login"
         text="Login"
       />
     </div>
 
     <div id="authorized" class="hidden mt-16">
-      <CaseHeader
+      <PortfolioHeader
         category={entry.data.category}
         title={entry.data.title}
         link={entry.data.link}
@@ -45,14 +45,14 @@ const browser =
         overview={entry.data.overview}
       />
 
-      <CaseGrid
+      <PortfolioGrid
         challenge={entry.data.challenge}
         hypothesis={entry.data.hypothesis}
         implementation={entry.data.implementation}
         outcome={entry.data.outcome}
       />
 
-      <CaseImage
+      <PortfolioImage
         width={width}
         browser={browser}
         link={entry.data.link}
@@ -60,7 +60,7 @@ const browser =
         alt={entry.data.image.alt}
       />
       <div class="text-center mt-14">
-        <ButtonLink href="/case-studies">← Back to Case Studies</ButtonLink>
+        <ButtonLink href="/portfolio">← Back to Portfolio</ButtonLink>
       </div>
     </div>
   </Container>

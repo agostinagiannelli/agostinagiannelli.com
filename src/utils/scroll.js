@@ -1,6 +1,6 @@
 document.addEventListener("astro:page-load", () => {
     document.addEventListener("astro:before-swap", () => {
-        if (window.location.pathname.includes("case-studies")) {
+        if (window.location.pathname === "/portfolio") {
             const scroll = window.scrollY;
             if (scroll > 0) {
                 sessionStorage.setItem("position", scroll.toString());
@@ -9,7 +9,7 @@ document.addEventListener("astro:page-load", () => {
     });
 
     document.addEventListener("astro:after-swap", () => {
-        if (window.location.pathname.includes("case-studies")) {
+        if (window.location.pathname === "/portfolio") {
             const position = sessionStorage.getItem("position");
             if (position !== null) {
                 setTimeout(() => {

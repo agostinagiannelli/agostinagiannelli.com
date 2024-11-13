@@ -15,7 +15,7 @@ document.addEventListener("astro:page-load", () => {
 
         if (password === "hello") {
             sessionStorage.setItem("authorized", "true");
-            window.location.href = "/case-studies";
+            window.location.href = "/portfolio";
         } else {
             result.classList.add("text-red-400");
             result.innerHTML = "Incorrect password. Please try again.";

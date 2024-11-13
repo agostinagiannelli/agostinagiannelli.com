@@ -2,8 +2,8 @@
 const { category, slug, title, subtitle } = Astro.props;
 ---
 
-<li class={`case ${category.replace(/[\s/]+/g, "-")}`}>
-  <a href={`/case/${slug}`}>
+<li class={`portfolio ${category.replace(/[\s/]+/g, "-")}`}>
+  <a href={`/portfolio/${slug}`}>
     <div>
       <p
         class="text-sm font-medium tracking-wider uppercase text-slate-800 dark:text-slate-200"
@@ -20,10 +20,10 @@ const { category, slug, title, subtitle } = Astro.props;
       </p>
       <div class="mt-4 text-slate-500 dark:text-slate-200">
         <a
-          href={`/case/${slug}`}
+          href={`/portfolio/${slug}`}
           class="lg:relative lg:dark:after:bg-slate-200 lg:after:bg-slate-500 lg:after:absolute lg:after:h-0.5 lg:after:w-0 after:bottom-0 lg:after:left-0 lg:hover:after:w-full lg:after:transition-all lg:after:duration-300 lg:cursor-pointer"
         >
-          → Read Case Study
+          → Read Initiative
         </a>
       </div>
     </div>

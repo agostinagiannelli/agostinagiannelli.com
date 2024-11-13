@@ -1,39 +1,39 @@
 document.addEventListener("astro:page-load", () => {
-    function hideCases(evt) {
-        const selectedCategory = evt.currentTarget.getAttribute("data-type");
+    function hideInitiatives(evt) {
+        const category = evt.currentTarget.getAttribute("data-type");
 
-        const allCases = document.querySelectorAll(".case");
-        allCases.forEach((element) => {
+        const all = document.querySelectorAll(".portfolio");
+        all.forEach((element) => {
             element.style.display = "block";
         });
 
-        if (selectedCategory !== "All") {
-            const filteredCases = document.querySelectorAll(`.case:not(.${selectedCategory})`);
-            filteredCases.forEach((element) => {
+        if (category !== "All") {
+            const filtered = document.querySelectorAll(`.portfolio:not(.${category})`);
+            filtered.forEach((element) => {
                 element.style.display = "none";
             });
         }
 
-        sessionStorage.setItem("selectedCategory", selectedCategory);
+        sessionStorage.setItem("category", category);
     }
 
-    const selectedCategory = sessionStorage.getItem("selectedCategory");
-    if (selectedCategory) {
+    const category = sessionStorage.getItem("category");
+    if (category) {
         const buttons = document.querySelectorAll(".category-button");
         buttons.forEach((button) => {
-            if (button.getAttribute("data-type") === selectedCategory) {
+            if (button.getAttribute("data-type") === category) {
                 button.classList.add("active");
             }
         });
 
-        const allCases = document.querySelectorAll(".case");
-        allCases.forEach((element) => {
+        const all = document.querySelectorAll(".portfolio");
+        all.forEach((element) => {
             element.style.display = "block";
         });
 
-        if (selectedCategory !== "All") {
-            const filteredCases = document.querySelectorAll(`.case:not(.${selectedCategory})`);
-            filteredCases.forEach((element) => {
+        if (category !== "All") {
+            const filtered = document.querySelectorAll(`.portfolio:not(.${category})`);
+            filtered.forEach((element) => {
                 element.style.display = "none";
             });
         }
@@ -41,6 +41,6 @@ document.addEventListener("astro:page-load", () => {
 
     const buttons = document.querySelectorAll(".category-button");
     buttons.forEach((button) => {
-        button.addEventListener("click", hideCases);
+        button.addEventListener("click", hideInitiatives);
     });
 });
