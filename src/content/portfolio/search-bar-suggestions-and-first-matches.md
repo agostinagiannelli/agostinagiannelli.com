@@ -2,7 +2,7 @@
 order: 12
 title: "Search Bar Suggestions and First Matches"
 subtitle: "Integrated search bar suggestions and displayed first-matching products to enhance product discovery"
-category: "UX/UI Design"
+category: "Content"
 link: "https://avon.uk.com/"
 tools: [Shopify]
 image: {

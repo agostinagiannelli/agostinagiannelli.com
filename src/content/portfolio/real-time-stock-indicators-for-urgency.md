@@ -2,7 +2,7 @@
 order: 14
 title: "Real-Time Stock Indicators for Urgency"
 subtitle: "Added a real-time stock indicator to highlight demand and encourage timely purchases"
-category: "UX/UI Design"
+category: "Conversion Funnel"
 link: "https://avonlebanonstore.com/collections/women-s-eau-de-parfum/products/tomorrow-for-her-eau-de-parfum"
 tools: [Shopify]
 image: {
