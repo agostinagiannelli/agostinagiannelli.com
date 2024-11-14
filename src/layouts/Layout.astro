@@ -27,6 +27,7 @@ const { description, title, url } = Astro.props;
     <link rel="canonical" href={url} />
     <meta name="generator" content={Astro.generator} />
 
+    <!-- Google Analytics (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-STFV7JRENN"
     ></script>
     <script is:inline>
@@ -37,6 +38,22 @@ const { description, title, url } = Astro.props;
       gtag("js", new Date());
 
       gtag("config", "G-STFV7JRENN");
+    </script>
+
+    <!-- Microsoft Clarity -->
+    <script is:inline>
+      (function (c, l, a, r, i, t, y) {
+        c[a] =
+          c[a] ||
+          function () {
+            (c[a].q = c[a].q || []).push(arguments);
+          };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "oydgqm2xjk");
     </script>
 
     <ViewTransitions />
