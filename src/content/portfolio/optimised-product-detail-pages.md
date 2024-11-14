@@ -2,7 +2,7 @@
 order: 2
 title: "Optimised Product Detail Pages"
 subtitle: "Optimised product detail pages by testing layout elements to maximise conversion potential"
-category: "A/B Testing"
+category: "UX/UI Design"
 link: "https://avon.uk.com/products/anew-protinol-power-serum"
 tools: [Shopify, Dynamic Yield, Contentsquare]
 image: {

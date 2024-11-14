@@ -2,7 +2,7 @@
 order: 10
 title: "Intuitive Filters on Product Listing Pages"
 subtitle: "Redesigned filters on product listing pages to improve product discovery and enhance user navigation"
-category: "A/B Testing"
+category: "UX/UI Design"
 link: "https://avon.uk.com/collections/make-up"
 tools: [Shopify, Dynamic Yield, Contentsquare]
 image: {

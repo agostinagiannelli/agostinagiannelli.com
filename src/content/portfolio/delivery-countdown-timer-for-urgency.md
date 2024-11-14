@@ -2,7 +2,7 @@
 order: 4
 title: "Delivery Countdown Timer for Urgency"
 subtitle: "Introduced a countdown timer to create urgency, encouraging quicker decision-making for delivery"
-category: "UX/UI Design"
+category: "Content"
 link: "https://avon.uk.com/products/skin-so-soft-original-dry-oil-spray"
 tools: [Shopify]
 image: {
