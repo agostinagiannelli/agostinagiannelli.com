@@ -1,5 +1,5 @@
 ---
-order: 17
+order: 18
 title: "Limited-Time Promotions for Urgency"
 subtitle: "Created limited-time promotions to generate urgency and drive faster purchase decisions"
 category: "Conversion Funnel"

@@ -1,5 +1,5 @@
 ---
-order: 14
+order: 15
 title: "Real-Time Stock Indicators for Urgency"
 subtitle: "Added a real-time stock indicator to highlight demand and encourage timely purchases"
 category: "Conversion Funnel"

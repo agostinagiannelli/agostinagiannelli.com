@@ -1,5 +1,5 @@
 ---
-order: 16
+order: 17
 title: "Recently Viewed Products on Homepage"
 subtitle: "Showcased previously viewed items on the homepage to ease users’ return to products of interest"
 category: "A/B Testing"

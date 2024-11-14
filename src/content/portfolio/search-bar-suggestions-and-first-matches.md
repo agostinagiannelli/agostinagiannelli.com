@@ -1,5 +1,5 @@
 ---
-order: 12
+order: 13
 title: "Search Bar Suggestions and First Matches"
 subtitle: "Integrated search bar suggestions and displayed first-matching products to enhance product discovery"
 category: "Content"

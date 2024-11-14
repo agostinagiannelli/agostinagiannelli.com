@@ -1,5 +1,5 @@
 ---
-order: 11
+order: 12
 title: "Product Reviews on Product Detail Pages"
 subtitle: "Incorporated product reviews to build trust and support purchase decisions through social proof"
 category: "Content"

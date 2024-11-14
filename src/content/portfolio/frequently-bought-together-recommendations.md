@@ -1,5 +1,5 @@
 ---
-order: 5
+order: 7
 title: "Frequently Bought Together Recommendations"
 subtitle: "Featured commonly bought items together to increase cross-selling opportunities and enhance the shopping experience"
 category: "Content"

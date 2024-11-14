@@ -1,5 +1,5 @@
 ---
-order: 15
+order: 16
 title: "Recommended Products in Cart"
 subtitle: "Showed recommended products in the cart to prompt additional purchases before checkout"
 category: "Personalisation"

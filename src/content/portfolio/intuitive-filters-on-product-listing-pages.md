@@ -1,5 +1,5 @@
 ---
-order: 10
+order: 11
 title: "Intuitive Filters on Product Listing Pages"
 subtitle: "Redesigned filters on product listing pages to improve product discovery and enhance user navigation"
 category: "UX/UI Design"
