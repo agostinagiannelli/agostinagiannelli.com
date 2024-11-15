@@ -1,8 +1,8 @@
 ---
-order: 5
+order: 16
 title: "Delivery Countdown Timer for Urgency"
 subtitle: "Introduced a countdown timer to create urgency, encouraging quicker decision-making for delivery"
-category: "Conversion Funnel"
+category: "A/B Testing"
 link: "https://avon.uk.com/products/skin-so-soft-original-dry-oil-spray"
 tools: [Shopify]
 image: {

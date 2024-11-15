@@ -1,5 +1,5 @@
 ---
-order: 23
+order: 27
 title: "AI-Powered Skincare Diagnostic Tool"
 subtitle: "Introduced an AI-powered skincare diagnostic tool to provide personalised product recommendations"
 category: "New Features"

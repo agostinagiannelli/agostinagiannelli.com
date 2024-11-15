@@ -1,5 +1,5 @@
 ---
-order: 8
+order: 17
 title: "Skincare Products by Skin Concern"
 subtitle: "Showcased skincare products tailored to user needs and preferences to increase relevance and engagement"
 category: "Content"
