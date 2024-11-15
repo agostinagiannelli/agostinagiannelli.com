@@ -1,5 +1,5 @@
 ---
-order: 10
+order: 20
 title: "Limited-Time Promotions for Urgency"
 subtitle: "Created limited-time promotions to generate urgency and drive faster purchase decisions"
 category: "A/B Testing"

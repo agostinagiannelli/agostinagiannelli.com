@@ -1,5 +1,5 @@
 ---
-order: 20
+order: 10
 title: "Top Promotions on Homepage"
 subtitle: "Tested homepage promotion layouts to drive engagement and improve visibility of top offers"
 category: "A/B Testing"
