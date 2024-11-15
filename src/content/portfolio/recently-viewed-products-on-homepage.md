@@ -2,7 +2,7 @@
 order: 22
 title: "Recently Viewed Products on Homepage"
 subtitle: "Showcased previously viewed items on the homepage to ease users’ return to products of interest"
-category: "A/B Testing"
+category: "Personalisation"
 link: "https://avon.uk.com/"
 tools: [Shopify, Dynamic Yield]
 image: {

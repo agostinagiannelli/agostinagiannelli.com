@@ -1,13 +1,13 @@
 ---
 order: 15
-title: "Frequently Bought Together Recommendations"
+title: "Cross-Sell Bundle Recommendations"
 subtitle: "Featured commonly bought items together to increase cross-selling opportunities and enhance the shopping experience"
 category: "New Features"
 link: "https://avon.uk.com/products/anew-platinum-day-lifting-cream-spf25"
 tools: [Shopify]
 image: {
-    src: "/img/frequently-bought-together-recommendations.png",
-    alt: "Frequently Bought Together Recommendations",
+    src: "/img/cross-sell-bundles-recommendations.png",
+    alt: "Cross-Sell Bundle Recommendations",
     device: "mobile"
 }
 overview: "Featured items commonly bought together to enhance cross-selling on Avon UK. Showing related products increases average order value and boosts conversions."
