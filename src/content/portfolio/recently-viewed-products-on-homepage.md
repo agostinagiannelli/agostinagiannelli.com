@@ -1,5 +1,5 @@
 ---
-order: 22
+order: 23
 title: "Recently Viewed Products on Homepage"
 subtitle: "Showcased previously viewed items on the homepage to ease users’ return to products of interest"
 category: "Personalisation"

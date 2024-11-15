@@ -1,9 +1,8 @@
 ---
-order: 24
+order: 5
 title: "Personalised Landing Pages"
 subtitle: "Tailored landing pages to create personalised shopping experiences and boost user engagement"
 category: "Personalisation"
-link: ""
 tools: [Shopify, Dynamic Yield]
 image: {
     src: "/img/personalised-landing-pages.png",

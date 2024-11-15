@@ -1,5 +1,5 @@
 ---
-order: 12
+order: 13
 title: "Personalised Homepage Recommendations"
 subtitle: "Personalised the homepage with product recommendations based on user browsing history and preferences"
 category: "Personalisation"

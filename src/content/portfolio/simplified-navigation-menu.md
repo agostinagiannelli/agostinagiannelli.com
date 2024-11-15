@@ -1,5 +1,5 @@
 ---
-order: 13
+order: 14
 title: "Simplified Navigation Menu"
 subtitle: "Restructured the navigation menu and categories to align with user behaviour and SEO insights"
 category: "Content"

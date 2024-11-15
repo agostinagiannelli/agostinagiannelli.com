@@ -1,5 +1,5 @@
 ---
-order: 14
+order: 15
 title: "Guest Checkout Implementation"
 subtitle: "Simplified the checkout process by introducing a guest checkout option to reduce cart abandonment"
 category: "Conversion Funnel"

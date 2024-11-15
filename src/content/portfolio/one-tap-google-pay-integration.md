@@ -1,5 +1,5 @@
 ---
-order: 21
+order: 22
 title: "One-Tap Google Pay Integration"
 subtitle: "Introduced a one-tap Google Pay button to simplify checkout and improve transaction speed"
 category: "Conversion Funnel"

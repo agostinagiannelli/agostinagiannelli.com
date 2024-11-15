@@ -1,5 +1,5 @@
 ---
-order: 4
+order: 11
 title: "Checkout Process Optimisation"
 subtitle: "Streamlined checkout process to reduce friction and increase conversion rates by simplifying the user journey"
 category: "Conversion Funnel"

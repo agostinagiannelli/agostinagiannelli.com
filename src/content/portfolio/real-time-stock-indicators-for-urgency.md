@@ -1,5 +1,5 @@
 ---
-order: 23
+order: 24
 title: "Real-Time Stock Indicators for Urgency"
 subtitle: "Added a real-time stock indicator to highlight demand and encourage timely purchases"
 category: "A/B Testing"
