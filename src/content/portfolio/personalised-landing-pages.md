@@ -1,5 +1,5 @@
 ---
-order: 5
+order: 7
 title: "Personalised Landing Pages"
 subtitle: "Tailored landing pages to create personalised shopping experiences and boost user engagement"
 category: "Personalisation"

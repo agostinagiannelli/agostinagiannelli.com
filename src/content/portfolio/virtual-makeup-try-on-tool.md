@@ -1,5 +1,5 @@
 ---
-order: 4
+order: 3
 title: "Virtual Makeup Try-On Tool"
 subtitle: "Introduced a virtual makeup try-on tool to enhance confidence and encourage purchases"
 category: "New Features"

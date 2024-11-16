@@ -1,5 +1,5 @@
 ---
-order: 25
+order: 26
 title: "Personalised Abandoned Cart Emails"
 subtitle: "Sent targeted abandoned cart emails to re-engage customers and drive conversions"
 category: "Personalisation"

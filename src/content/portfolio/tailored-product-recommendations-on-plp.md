@@ -1,5 +1,5 @@
 ---
-order: 19
+order: 20
 title: "Tailored Product Recommendations on PLP"
 subtitle: "Tailored product recommendations on product listing pages to match users’ browsing interests"
 category: "Personalisation"

@@ -1,5 +1,5 @@
 ---
-order: 16
+order: 17
 title: "Cross-Sell Bundle Recommendations"
 subtitle: "Featured commonly bought items together to increase cross-selling opportunities and enhance the shopping experience"
 category: "New Features"

@@ -1,5 +1,5 @@
 ---
-order: 21
+order: 22
 title: "Enhanced Product Discovery on PDP"
 subtitle: "Optimised content on product detail pages to improve product discovery and enhance navigation"
 category: "Content"

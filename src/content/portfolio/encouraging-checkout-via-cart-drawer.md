@@ -1,5 +1,5 @@
 ---
-order: 8
+order: 5
 title: "Encouraging Checkout via Cart Drawer"
 subtitle: "Implemented a cart drawer that opens when a product is added, guiding users towards completing their purchase"
 category: "Conversion Funnel"

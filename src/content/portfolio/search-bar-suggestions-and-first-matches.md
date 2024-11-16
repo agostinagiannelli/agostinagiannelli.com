@@ -1,5 +1,5 @@
 ---
-order: 9
+order: 8
 title: "Search Bar Suggestions and First Matches"
 subtitle: "Integrated search bar suggestions and displayed first-matching products to enhance product discovery and navigation"
 category: "UX/UI Design"

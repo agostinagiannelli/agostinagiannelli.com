@@ -1,5 +1,5 @@
 ---
-order: 26
+order: 27
 title: "Chatbot for Product Assistance"
 subtitle: "Deployed a chatbot to assist with FAQs and offer tailored product recommendations to users"
 category: "New Features"
