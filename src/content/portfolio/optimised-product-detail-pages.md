@@ -14,4 +14,4 @@ overview: "Optimised product detail page layouts on Avon UK with a mobile-first 
 challenge: "Users were dropping off the product detail page without converting, possibly due to suboptimal page layout and unclear call-to-action buttons."
 hypothesis: "Testing different PDP layouts will identify the most effective design for guiding users towards making a purchase, increasing conversion rates."
 implementation: "A/B tested variations of the PDP layout, including different placements for images, descriptions, and call-to-action buttons, to see which combination led to more successful conversions, with a mobile-first approach."
-outcome: "Increased user engagement and improved conversion rates through a more intuitive, visually appealing, and user-friendly product detail page."
+outcome: "Increased user engagement and improved add-to-cart and conversion rates through a more intuitive, visually appealing, and user-friendly product detail page."

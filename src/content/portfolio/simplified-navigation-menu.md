@@ -15,4 +15,4 @@ challenge: "The existing navigation structure was aligned with internal business
 "
 hypothesis: "Aligning the navigation menu and product categories with user expectations and SEO best practices will enhance product discovery, reduce bounce rates, and increase conversions."
 implementation: "Conducted an in-depth analysis of user behaviour, complemented by SEO keyword research and competitor benchmarking. Restructured the menu hierarchy, simplified category names, and optimised subcategories for clarity and relevance."
-outcome: "Improved user engagement with a 20% increase in time spent on site, a 15% reduction in bounce rates, and a 10% uplift in conversion rates, showing the positive impact of user-centred navigation."
+outcome: "Improved user engagement with an increase in time spent on site, a reduction in bounce rates, and an uplift in conversion rates."

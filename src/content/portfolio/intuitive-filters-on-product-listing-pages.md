@@ -14,4 +14,4 @@ overview: "Tested redesigned filters on Avon UK's product listing pages to impro
 challenge: "Users struggled to find relevant products quickly due to poorly designed and hard-to-use filters on the product listing pages, resulting in high bounce rates."
 hypothesis: "Testing redesigned, more intuitive filters will improve product discovery, leading to more product views and higher conversion rates."
 implementation: "A/B tested new filter designs, including multi-select options and clearer categories, to determine which provided better product discovery and ease of use for users."
-outcome: "Improved product discovery and a reduction in bounce rates, leading to more time spent on the site and higher conversion rates."
+outcome: "Improved product discovery and a reduction in exit rates, leading to more time spent on the site and higher conversion rates."

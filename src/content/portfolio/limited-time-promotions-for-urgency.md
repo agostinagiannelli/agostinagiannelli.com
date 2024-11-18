@@ -13,4 +13,4 @@ overview: "Introduced limited-time promotions with countdown timers on Avon Malt
 challenge: "Users were not acting quickly enough on limited-time offers, resulting in missed conversion opportunities during promotional periods."
 hypothesis: "Implementing countdown timers on time-sensitive promotions will encourage users to make quicker purchase decisions, leading to higher conversion rates."
 implementation: "A/B tested time-sensitive promotions with countdown timers displayed both on PDPs and throughout the checkout process to optimise urgency and prompt faster purchases."
-outcome: "Increased conversion rates for products offered within limited-time."
+outcome: "Increased add-to-cart and conversion rates for products offered within limited-time."
