@@ -1,51 +1,33 @@
 ---
+import AdobeLightLogo from "@/assets/logos/AdobeRed.astro";
+import AdobeDarkLogo from "@/assets/logos/AdobeWhite.astro";
+import FigmaLogo from "@/assets/logos/Figma.astro";
+import GA4Logo from "@/assets/logos/GA4.astro";
+import GTMLogo from "@/assets/logos/GTM.astro";
+import HotjarLogo from "@/assets/logos/Hotjar.astro";
+import JiraLogo from "@/assets/logos/Jira.astro";
+import LookerStudioLogo from "@/assets/logos/LookerStudio.astro";
 import ShopifyLogo from "@/assets/logos/Shopify.astro";
-import ShopifyWhiteLogo from "@/assets/logos/ShopifyWhite.astro";
-import GoogleAnalyticsLogo from "@/assets/logos/GoogleAnalytics.astro";
-import GoogleTagManagerLogo from "@/assets/logos/GoogleTagManager.astro";
-import DynamicYieldLogo from "@/assets/logos/DynamicYield.astro";
-import NostoLogo from "@/assets/logos/Nosto.astro";
-import ContentSquareLogo from "@/assets/logos/ContentSquare.astro";
 ---
 
 <div class="my-24">
-  <h2 class="text-center text-slate-600 dark:text-slate-200">
-    Proficient in a wide range of ecommerce and CRO tools to drive business
-    results
-  </h2>
-  <div
-    class="grid items-center gap-8 mt-10 md:grid-cols-2 lg:grid-cols-3 justify-items-center"
-  >
-    <div class="flex items-center justify-center">
-      <ShopifyLogo alt="Shopify" class="h-10 dark:hidden" />
-      <ShopifyWhiteLogo alt="Shopify" class="hidden h-10 dark:block" />
+    <h2 class="text-center text-slate-600 dark:text-slate-200">
+        Proficient in a wide range of ecommerce and CRO tools
+    </h2>
+    <div
+        class="flex gap-14 md:gap-20 items-center justify-center mt-10 flex-wrap"
+    >
+        <AdobeLightLogo alt="Adobe" class="size-8 md:size-12 dark:hidden" />
+        <AdobeDarkLogo
+            alt="Adobe"
+            class="size-8 md:size-12 hidden dark:block"
+        />
+        <GA4Logo alt="Google Analytics 4" class="size-8 md:size-12" />
+        <GTMLogo alt="Google Tag Manager" class="size-8 md:size-12" />
+        <LookerStudioLogo alt="LookerStudio" class="size-8 md:size-12" />
+        <HotjarLogo alt="Hotjar" class="size-8 md:size-12" />
+        <JiraLogo alt="Jira" class="size-8 md:size-12" />
+        <FigmaLogo alt="Figma" class="size-8 md:size-12" />
+        <ShopifyLogo alt="Shopify" class="size-8 md:size-12" />
     </div>
-    <div class="flex items-center justify-center">
-      <GoogleAnalyticsLogo
-        alt="Google Analytics"
-        class="h-10 dark:brightness-0 dark:invert"
-      />
-    </div>
-    <div class="flex items-center justify-center">
-      <GoogleTagManagerLogo
-        alt="Google Tag Manager"
-        class="h-10 dark:brightness-0 dark:invert"
-      />
-    </div>
-    <div class="flex items-center justify-center">
-      <DynamicYieldLogo
-        alt="Dynamic Yield"
-        class="h-10 dark:brightness-0 dark:invert"
-      />
-    </div>
-    <div class="flex items-center justify-center">
-      <ContentSquareLogo
-        alt="Contentsquare"
-        class="h-8 dark:brightness-0 dark:invert"
-      />
-    </div>
-    <div class="flex items-center justify-center">
-      <NostoLogo alt="Nosto" class="h-5 dark:brightness-0 dark:invert" />
-    </div>
-  </div>
 </div>
