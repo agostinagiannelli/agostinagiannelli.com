@@ -1,49 +1,49 @@
 ---
 import Heading2 from "@/components/Heading2.astro";
-import GrowthIcon from "@/assets/icons/Growth.astro";
-import EcommerceIcon from "@/assets/icons/Ecommerce.astro";
-import ProductIcon from "@/assets/icons/Product.astro";
-import ProjectIcon from "@/assets/icons/Project.astro";
+import PipeIcon from "@/assets/icons/Pipe.astro";
+import SearchIcon from "@/assets/icons/Search.astro";
+import GearIcon from "@/assets/icons/Gear.astro";
+import CodeIcon from "@/assets/icons/Code.astro";
 
 const SKILLS = [
   {
-    title: "Conversion Rate Optimisation (CRO)",
+    title: "CRO Strategy & Execution",
     description:
-      "Maximising revenue through data-driven insights, A/B testing, and a focus on user behaviour and UX principles to optimise conversion performance.",
-    icon: GrowthIcon,
+      "Expertise in driving conversion optimisation through A/B testing, personalisation, and data-driven strategies, leveraging tools like Adobe Target.",
+    icon: PipeIcon,
   },
   {
-    title: "Strategic Ecommerce Growth",
+    title: "Data Analysis & Insights",
     description:
-      "Developing ecommerce strategies to drive growth, modernise sales channels, and enhance customer engagement and user experience.",
-    icon: EcommerceIcon,
+      "Proficient in using Adobe Analytics and Google Analytics 4 to extract actionable insights that inform business decisions.",
+    icon: SearchIcon,
   },
   {
-    title: "User-Centric Product Development",
+    title: "Cross-Functional Collaboration",
     description:
-      "Creating digital products prioritising user needs, leveraging feedback and behavioural analysis to boost customer satisfaction.",
-    icon: ProductIcon,
+      "Skilled in managing stakeholders and working closely with UX, development, and business teams to achieve aligned goals.",
+    icon: GearIcon,
   },
   {
-    title: "Agile Project Management",
+    title: "Technical & Business Alignment",
     description:
-      "Collaborating with cross-functional teams using agile methodologies to deliver projects on time, informed by data analytics for continuous growth.",
-    icon: ProjectIcon,
+      "Strong web development foundation, ensuring seamless integration of CRO initiatives with overarching business objectives.",
+    icon: CodeIcon,
   },
 ];
 ---
 
 <div>
   <Heading2
-    h2="Skills"
-    paragraph="Leveraging expertise in ecommerce and project management to drive impactful digital growth"
+    h2="Skills & Expertise"
+    paragraph="Combining technical expertise, strategic insight, and collaborative execution to drive business success"
   />
   <div class="grid gap-12 mt-16 sm:grid-cols-2 md:gap-16">
     {
       SKILLS.map(({ title, description, icon: Icon }) => (
         <div class="flex items-start gap-4">
           <div class="w-8 h-8 p-1 mt-1 transition rounded-full bg-slate-800 shrink-0 dark:bg-white md:hover:scale-105">
-            <Icon class="text-white dark:text-black" />
+            <Icon class="text-white p-0.5 dark:text-black" />
           </div>
           <div>
             <h3 class="text-lg font-semibold tracking-tight text-black dark:text-white">
