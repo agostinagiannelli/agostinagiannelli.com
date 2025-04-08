@@ -17,17 +17,136 @@ import ShopifyLogo from "@/assets/logos/Shopify.astro";
     <div
         class="flex gap-14 md:gap-20 items-center justify-center mt-10 flex-wrap"
     >
-        <AdobeLightLogo alt="Adobe" class="size-8 md:size-12 dark:hidden" />
-        <AdobeDarkLogo
-            alt="Adobe"
-            class="size-8 md:size-12 hidden dark:block"
-        />
-        <GA4Logo alt="Google Analytics 4" class="size-8 md:size-12" />
-        <GTMLogo alt="Google Tag Manager" class="size-8 md:size-12" />
-        <LookerStudioLogo alt="LookerStudio" class="size-8 md:size-12" />
-        <HotjarLogo alt="Hotjar" class="size-8 md:size-12" />
-        <JiraLogo alt="Jira" class="size-8 md:size-12" />
-        <FigmaLogo alt="Figma" class="size-8 md:size-12" />
-        <ShopifyLogo alt="Shopify" class="size-8 md:size-12" />
+        <div class="relative group dark:hidden">
+            <AdobeLightLogo alt="Adobe" class="size-8 md:size-12" />
+            <div
+                class="absolute top-full mt-2 left-1/2 -translate-x-1/2 z-10 px-3 py-2 text-sm text-white bg-slate-800
+                 dark:bg-white dark:text-slate-800 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap
+                 after:content-[''] after:absolute after:bottom-full after:left-1/2 after:-translate-x-1/2 after:border-8
+                 after:border-transparent after:border-b-slate-800 dark:after:border-b-white"
+            >
+                Adobe
+            </div>
+        </div>
+
+        <div class="relative group hidden dark:block">
+            <AdobeDarkLogo alt="Adobe" class="size-8 md:size-12" />
+            <div
+                id="tooltip-adobe-dark"
+                role="tooltip"
+                class="absolute top-full mt-2 left-1/2 -translate-x-1/2 z-10 px-3 py-2 text-sm text-white bg-slate-800
+                 dark:bg-white dark:text-slate-800 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap
+                 after:content-[''] after:absolute after:bottom-full after:left-1/2 after:-translate-x-1/2 after:border-8
+                 after:border-transparent after:border-b-slate-800 dark:after:border-b-white"
+            >
+                Adobe
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+        </div>
+
+        <div class="relative group">
+            <GA4Logo alt="Google Analytics 4" class="size-8 md:size-12" />
+            <div
+                id="tooltip-ga4"
+                role="tooltip"
+                class="absolute top-full mt-2 left-1/2 -translate-x-1/2 z-10 px-3 py-2 text-sm text-white bg-slate-800
+                 dark:bg-white dark:text-slate-800 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap
+                 after:content-[''] after:absolute after:bottom-full after:left-1/2 after:-translate-x-1/2 after:border-8
+                 after:border-transparent after:border-b-slate-800 dark:after:border-b-white"
+            >
+                Google Analytics 4
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+        </div>
+
+        <div class="relative group">
+            <GTMLogo alt="Google Tag Manager" class="size-8 md:size-12" />
+            <div
+                id="tooltip-gtm"
+                role="tooltip"
+                class="absolute top-full mt-2 left-1/2 -translate-x-1/2 z-10 px-3 py-2 text-sm text-white bg-slate-800
+                 dark:bg-white dark:text-slate-800 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap
+                 after:content-[''] after:absolute after:bottom-full after:left-1/2 after:-translate-x-1/2 after:border-8
+                 after:border-transparent after:border-b-slate-800 dark:after:border-b-white"
+            >
+                Google Tag Manager
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+        </div>
+
+        <div class="relative group">
+            <LookerStudioLogo alt="LookerStudio" class="size-8 md:size-12" />
+            <div
+                id="tooltip-lookerstudio"
+                role="tooltip"
+                class="absolute top-full mt-2 left-1/2 -translate-x-1/2 z-10 px-3 py-2 text-sm text-white bg-slate-800
+                 dark:bg-white dark:text-slate-800 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap
+                 after:content-[''] after:absolute after:bottom-full after:left-1/2 after:-translate-x-1/2 after:border-8
+                 after:border-transparent after:border-b-slate-800 dark:after:border-b-white"
+            >
+                Looker Studio
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+        </div>
+
+        <div class="relative group">
+            <HotjarLogo alt="Hotjar" class="size-8 md:size-12" />
+            <div
+                id="tooltip-hotjar"
+                role="tooltip"
+                class="absolute top-full mt-2 left-1/2 -translate-x-1/2 z-10 px-3 py-2 text-sm text-white bg-slate-800
+                 dark:bg-white dark:text-slate-800 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap
+                 after:content-[''] after:absolute after:bottom-full after:left-1/2 after:-translate-x-1/2 after:border-8
+                 after:border-transparent after:border-b-slate-800 dark:after:border-b-white"
+            >
+                Hotjar
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+        </div>
+
+        <div class="relative group">
+            <JiraLogo alt="Jira" class="size-8 md:size-12" />
+            <div
+                id="tooltip-jira"
+                role="tooltip"
+                class="absolute top-full mt-2 left-1/2 -translate-x-1/2 z-10 px-3 py-2 text-sm text-white bg-slate-800
+                 dark:bg-white dark:text-slate-800 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap
+                 after:content-[''] after:absolute after:bottom-full after:left-1/2 after:-translate-x-1/2 after:border-8
+                 after:border-transparent after:border-b-slate-800 dark:after:border-b-white"
+            >
+                Jira
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+        </div>
+
+        <div class="relative group">
+            <FigmaLogo alt="Figma" class="size-8 md:size-12" />
+            <div
+                id="tooltip-figma"
+                role="tooltip"
+                class="absolute top-full mt-2 left-1/2 -translate-x-1/2 z-10 px-3 py-2 text-sm text-white bg-slate-800
+                 dark:bg-white dark:text-slate-800 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap
+                 after:content-[''] after:absolute after:bottom-full after:left-1/2 after:-translate-x-1/2 after:border-8
+                 after:border-transparent after:border-b-slate-800 dark:after:border-b-white"
+            >
+                Figma
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+        </div>
+
+        <div class="relative group">
+            <ShopifyLogo alt="Shopify" class="size-8 md:size-12" />
+            <div
+                id="tooltip-shopify"
+                role="tooltip"
+                class="absolute top-full mt-2 left-1/2 -translate-x-1/2 z-10 px-3 py-2 text-sm text-white bg-slate-800
+                 dark:bg-white dark:text-slate-800 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap
+                 after:content-[''] after:absolute after:bottom-full after:left-1/2 after:-translate-x-1/2 after:border-8
+                 after:border-transparent after:border-b-slate-800 dark:after:border-b-white"
+            >
+                Shopify
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+        </div>
     </div>
 </div>
