@@ -1,43 +1,55 @@
 ---
 import Heading2 from "@/components/Heading2.astro";
+import RobotIcon from "@/assets/icons/Robot.astro";
 import PipeIcon from "@/assets/icons/Pipe.astro";
-import SearchIcon from "@/assets/icons/Search.astro";
-import GearIcon from "@/assets/icons/Gear.astro";
-import CodeIcon from "@/assets/icons/Code.astro";
+import EyeIcon from "@/assets/icons/Eye.astro";
+import ChartIcon from "@/assets/icons/Chart.astro";
+import Pill from "./Pill.astro";
 
 const SKILLS = [
   {
-    title: "CRO Strategy & Execution",
+    title: "Experimentation & CRO Strategy",
     description:
-      "Identifying growth opportunities, building hypotheses and validating them through experimentation.",
+      "Designing experimentation roadmaps, prioritising hypotheses and validating growth opportunities through A/B testing and personalisation strategies.",
     icon: PipeIcon,
   },
   {
-    title: "Data Analysis & Insights",
+    title: "Behavioural Insights",
     description:
-      "Using Adobe Analytics and GA4 to uncover behavioural insights and guide optimisation decisions.",
-    icon: SearchIcon,
+      "Identifying friction, cognitive load and behavioural barriers across digital journeys to improve user decision-making and enable more effective personalisation and conversion.",
+    icon: EyeIcon,
   },
   {
-    title: "Cross-Functional Collaboration",
+    title: "Digital Analytics & Growth Insights",
     description:
-      "Working with product, UX, development and business teams to drive aligned growth initiatives.",
-    icon: GearIcon,
+      "Using tools such as Adobe Analytics and GA4 to uncover behavioural patterns, measure experimentation impact and guide optimisation decisions.",
+    icon: ChartIcon,
   },
   {
-    title: "Technical & Business Alignment",
+    title: "AI-Powered Growth Workflows",
     description:
-      "Frontend development and GTM implementation to support experimentation and CRO initiatives.",
-    icon: CodeIcon,
+      "Using custom AI agents to accelerate experimentation workflows, generate hypothesis ideas, analyse behavioural patterns and support data-driven optimisation decisions.",
+    icon: RobotIcon,
   },
+];
+
+const INDUSTRIES = [
+  "Hospitality & Travel",
+  "Energy",
+  "Banking",
+  "Beauty & Cosmetics",
+  "Publishing & Education",
 ];
 ---
 
 <div>
   <Heading2
     h2="Skills & Expertise"
-    paragraph="Combining experimentation, data analysis and technical expertise to drive measurable growth."
+    paragraph="Combining experimentation, behavioural insights and analytics to drive measurable digital growth across industries including:"
   />
+  <div class="flex flex-wrap gap-2 mb-12 md:gap-4 mt-4">
+    {INDUSTRIES.map((content) => <Pill content={content} />)}
+  </div>
   <div class="grid gap-12 mt-16 sm:grid-cols-2 md:gap-16">
     {
       SKILLS.map(({ title, description, icon: Icon }) => (

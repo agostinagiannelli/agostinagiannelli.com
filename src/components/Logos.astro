@@ -1,9 +1,10 @@
 ---
 import AdobeLightLogo from "@/assets/logos/AdobeRed.astro";
 import AdobeDarkLogo from "@/assets/logos/AdobeWhite.astro";
+import VWOLightLogo from "@/assets/logos/VWOPurple.astro";
+import VWODarkLogo from "@/assets/logos/VWOWhite.astro";
 import FigmaLogo from "@/assets/logos/Figma.astro";
 import GA4Logo from "@/assets/logos/GA4.astro";
-import GTMLogo from "@/assets/logos/GTM.astro";
 import HotjarLogo from "@/assets/logos/Hotjar.astro";
 import JiraLogo from "@/assets/logos/Jira.astro";
 import LookerStudioLogo from "@/assets/logos/LookerStudio.astro";
@@ -11,26 +12,29 @@ import ShopifyLogo from "@/assets/logos/Shopify.astro";
 ---
 
 <div class="my-24">
-    <h2 class="text-center text-slate-600 dark:text-slate-200">
-        Proficient in a diverse suite of ecommerce and CRO tools.
-    </h2>
     <div
         class="flex gap-14 md:gap-20 items-center justify-center mt-10 flex-wrap"
     >
         <div class="relative group dark:hidden">
-            <AdobeLightLogo alt="Adobe" class="size-8 md:size-12" />
+            <AdobeLightLogo
+                alt="Adobe Target/Analytics"
+                class="size-8 md:size-12"
+            />
             <div
                 class="absolute top-full mt-2 left-1/2 -translate-x-1/2 z-10 px-3 py-2 text-sm text-white bg-slate-800
                  dark:bg-white dark:text-slate-800 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap
                  after:content-[''] after:absolute after:bottom-full after:left-1/2 after:-translate-x-1/2 after:border-8
                  after:border-transparent after:border-b-slate-800 dark:after:border-b-white"
             >
-                Adobe
+                Adobe Target/Analytics
             </div>
         </div>
 
         <div class="relative group hidden dark:block">
-            <AdobeDarkLogo alt="Adobe" class="size-8 md:size-12" />
+            <AdobeDarkLogo
+                alt="Adobe Target/Analytics"
+                class="size-8 md:size-12"
+            />
             <div
                 id="tooltip-adobe-dark"
                 role="tooltip"
@@ -39,7 +43,34 @@ import ShopifyLogo from "@/assets/logos/Shopify.astro";
                  after:content-[''] after:absolute after:bottom-full after:left-1/2 after:-translate-x-1/2 after:border-8
                  after:border-transparent after:border-b-slate-800 dark:after:border-b-white"
             >
-                Adobe
+                Adobe Target/Analytics
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+        </div>
+
+        <div class="relative group dark:hidden">
+            <VWOLightLogo alt="VWO" class="size-8 md:size-12" />
+            <div
+                class="absolute top-full mt-2 left-1/2 -translate-x-1/2 z-10 px-3 py-2 text-sm text-white bg-slate-800
+                 dark:bg-white dark:text-slate-800 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap
+                 after:content-[''] after:absolute after:bottom-full after:left-1/2 after:-translate-x-1/2 after:border-8
+                 after:border-transparent after:border-b-slate-800 dark:after:border-b-white"
+            >
+                VWO
+            </div>
+        </div>
+
+        <div class="relative group hidden dark:block">
+            <VWODarkLogo alt="VWO" class="size-8 md:size-12" />
+            <div
+                id="tooltip-adobe-dark"
+                role="tooltip"
+                class="absolute top-full mt-2 left-1/2 -translate-x-1/2 z-10 px-3 py-2 text-sm text-white bg-slate-800
+                 dark:bg-white dark:text-slate-800 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap
+                 after:content-[''] after:absolute after:bottom-full after:left-1/2 after:-translate-x-1/2 after:border-8
+                 after:border-transparent after:border-b-slate-800 dark:after:border-b-white"
+            >
+                VWO
                 <div class="tooltip-arrow" data-popper-arrow></div>
             </div>
         </div>
@@ -55,21 +86,6 @@ import ShopifyLogo from "@/assets/logos/Shopify.astro";
                  after:border-transparent after:border-b-slate-800 dark:after:border-b-white"
             >
                 Google Analytics 4
-                <div class="tooltip-arrow" data-popper-arrow></div>
-            </div>
-        </div>
-
-        <div class="relative group">
-            <GTMLogo alt="Google Tag Manager" class="size-8 md:size-12" />
-            <div
-                id="tooltip-gtm"
-                role="tooltip"
-                class="absolute top-full mt-2 left-1/2 -translate-x-1/2 z-10 px-3 py-2 text-sm text-white bg-slate-800
-                 dark:bg-white dark:text-slate-800 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap
-                 after:content-[''] after:absolute after:bottom-full after:left-1/2 after:-translate-x-1/2 after:border-8
-                 after:border-transparent after:border-b-slate-800 dark:after:border-b-white"
-            >
-                Google Tag Manager
                 <div class="tooltip-arrow" data-popper-arrow></div>
             </div>
         </div>
