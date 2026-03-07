@@ -11,22 +11,27 @@ const portfolio = await getCollection("portfolio");
 
 portfolio.sort((a, b) => a.data.order - b.data.order);
 
-const categories = Array.from(new Set(portfolio.map((p) => p.data.category))).sort(
-  (a, b) => a.localeCompare(b),
-);
+const categories = Array.from(
+  new Set(portfolio.map((p) => p.data.category)),
+).sort((a, b) => a.localeCompare(b));
+
+const authorized = Astro.cookies.get("authorized")?.value === "true";
+
+if (!authorized) {
+  return Astro.redirect("/login");
+}
 ---
 
-<Layout title="Agostina Giannelli - Growth & CRO • Portfolio">
+<Layout title="Agostina Giannelli - Growth & CRO • Use Cases">
   <Container>
     <Heading1
-      h1="Experimentation & Personalisation Use Cases"
-      paragraph="Selected examples of experimentation, personalisation and growth optimisation across digital products."
+      h1="Use Cases"
+      paragraph="Selected examples of experimentation and personalisation initiatives I led across digital products."
     />
 
     <div id="unauthorized" class="hidden mt-16">
       <Block
-        h2="Welcome"
-        paragraph="Portfolio is password-protected. Want to check it out?"
+        paragraph="Use Cases is password-protected. Want to check it out?"
         href="/login"
         text="Login"
       />
@@ -37,7 +42,7 @@ const categories = Array.from(new Set(portfolio.map((p) => p.data.category))).so
         <BadgeCategory category="All" />
         {categories.map((category) => <BadgeCategory category={category} />)}
       </div>
-      <ul class="grid gap-16 md:grid-cols-2 lg:grid-cols-3">
+      <ul class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {
           portfolio.map((entry) => (
             <PortfolioCard
@@ -53,6 +58,5 @@ const categories = Array.from(new Set(portfolio.map((p) => p.data.category))).so
   </Container>
 
   <script src="../utils/scroll.js"></script>
-  <script src="../utils/auth.js"></script>
   <script src="../utils/filter.js"></script>
 </Layout>
