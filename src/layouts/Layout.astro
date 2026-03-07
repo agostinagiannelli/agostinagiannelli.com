@@ -27,6 +27,8 @@ const { description, title, url } = Astro.props;
     <link rel="canonical" href={url} />
     <meta name="generator" content={Astro.generator} />
 
+    <script is:inline async src="https://cdn.ablyft.com/s/95785129.js"></script>
+
     <script is:inline>
       (function (w, d, s, l, i) {
         w[l] = w[l] || [];
@@ -39,8 +41,6 @@ const { description, title, url } = Astro.props;
         f.parentNode.insertBefore(j, f);
       })(window, document, "script", "dataLayer", "GTM-552J979D");
     </script>
-    
-    <script src="https://cdn.ablyft.com/s/95785129.js"></script>
 
     <ViewTransitions />
   </head>
