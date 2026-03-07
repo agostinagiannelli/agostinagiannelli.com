@@ -3,10 +3,8 @@ document.addEventListener("astro:page-load", () => {
     const buttons = document.querySelectorAll(".category-button");
 
     function filterItems(category) {
-        const cat = category.toLowerCase();
-
         items.forEach((item) => {
-            if (cat === "all" || item.classList.contains(cat)) {
+            if (category === "All" || item.classList.contains(category)) {
                 item.style.display = "block";
             } else {
                 item.style.display = "none";
