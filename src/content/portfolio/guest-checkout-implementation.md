@@ -1,17 +1,11 @@
 ---
-order: 15
+order: 7
 title: "Guest Checkout Implementation"
-subtitle: "Simplified the checkout process by introducing a guest checkout option to reduce cart abandonment"
-category: "Conversion Funnel"
-link: "https://avon.uk.com/"
+subtitle: "Removing account creation friction in checkout"
+category: "Ecommerce"
 tools: [Shopify]
-image: {
-    src: "/img/guest-checkout-implementation.png",
-    alt: "Guest Checkout Implementation",
-    device: "desktop"
-}
-overview: "Introduced a guest checkout option on Avon UK to streamline the purchase process for users, eliminating the need for account creation. Reducing friction during checkout, significantly lowers abandonment rates and improves conversion rates."
-challenge: "Users were abandoning their carts at the account creation step, as mandatory registration created unnecessary barriers to completing a purchase."
-hypothesis: "Adding a guest checkout option will simplify the user journey, reduce abandonment, and drive an increase in completed purchases."
-implementation: "Enabled guest checkout functionality in the ecommerce platform, providing users with the choice to checkout as a guest or register an account. A/B tested messaging to highlight the convenience of guest checkout, ensuring clear communication."
-outcome: "Lowered cart abandonment rates and achieved an uplift in overall conversions, demonstrating the positive impact of a frictionless checkout experience."
+overview: "Introduced guest checkout to reduce friction and allow users to complete purchases without creating an account."
+challenge: "Mandatory account creation created a barrier in the checkout flow, increasing cart abandonment."
+hypothesis: "Allowing users to checkout as guests would reduce friction and increase completion rates."
+implementation: "Enabled guest checkout and tested messaging highlighting the convenience of skipping account creation."
+outcome: "Reduced checkout abandonment and improved overall conversion rates."
