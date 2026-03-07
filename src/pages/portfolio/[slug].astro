@@ -18,14 +18,14 @@ export async function getStaticPaths() {
   }));
 }
 
-const width =
-  entry.data.image.device === "desktop" ? "md:max-w-4xl" : "md:w-[300px]";
+// const width =
+//   entry.data.image.device === "desktop" ? "md:max-w-4xl" : "md:w-[300px]";
 
-const browser =
-  entry.data.image.device === "desktop" ? "lg:flex hidden" : "hidden";
+// const browser =
+//   entry.data.image.device === "desktop" ? "lg:flex hidden" : "hidden";
 ---
 
-<Layout title={`Agostina Giannelli • ${entry.data.title}`}>
+<Layout title={`Agostina Giannelli - Growth & CRO • ${entry.data.title}`}>
   <Container class="space-y-16">
     <div id="unauthorized" class="hidden mt-36">
       <Block
@@ -40,10 +40,17 @@ const browser =
       <PortfolioHeader
         category={entry.data.category}
         title={entry.data.title}
-        link={entry.data.link}
         tools={entry.data.tools}
         overview={entry.data.overview}
       />
+
+      <!-- <PortfolioHeader
+        category={entry.data.category}
+        title={entry.data.title}
+        link={entry.data.link}
+        tools={entry.data.tools}
+        overview={entry.data.overview}
+      /> -->
 
       <PortfolioGrid
         challenge={entry.data.challenge}
@@ -52,13 +59,13 @@ const browser =
         outcome={entry.data.outcome}
       />
 
-      <PortfolioImage
+      <!-- <PortfolioImage
         width={width}
         browser={browser}
         link={entry.data.link}
         src={entry.data.image.src}
         alt={entry.data.image.alt}
-      />
+      /> -->
       <div class="text-center mt-14">
         <ButtonLink href="/portfolio">← Back to Portfolio</ButtonLink>
       </div>
