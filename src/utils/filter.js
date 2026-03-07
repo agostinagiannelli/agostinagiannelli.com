@@ -1,45 +1,40 @@
 document.addEventListener("astro:page-load", () => {
-    function hideInitiatives(evt) {
-        const category = evt.currentTarget.getAttribute("data-type");
+    const items = document.querySelectorAll(".portfolio");
+    const buttons = document.querySelectorAll(".category-button");
 
-        const all = document.querySelectorAll(".portfolio");
-        all.forEach((element) => {
-            element.style.display = "block";
+    function filterItems(category) {
+        items.forEach((item) => {
+            if (category === "all" || item.classList.contains(category)) {
+                item.style.display = "block";
+            } else {
+                item.style.display = "none";
+            }
         });
-
-        if (category !== "All") {
-            const filtered = document.querySelectorAll(`.portfolio:not(.${category})`);
-            filtered.forEach((element) => {
-                element.style.display = "none";
-            });
-        }
-
-        sessionStorage.setItem("category", category);
     }
 
-    const category = sessionStorage.getItem("category");
-    if (category) {
-        const buttons = document.querySelectorAll(".category-button");
+    function hideInitiatives(evt) {
+        const category = evt.currentTarget.dataset.type;
+
+        filterItems(category);
+
+        sessionStorage.setItem("category", category);
+
+        buttons.forEach((button) => button.classList.remove("active"));
+        evt.currentTarget.classList.add("active");
+    }
+
+    const savedCategory = sessionStorage.getItem("category");
+
+    if (savedCategory) {
+        filterItems(savedCategory);
+
         buttons.forEach((button) => {
-            if (button.getAttribute("data-type") === category) {
+            if (button.dataset.type === savedCategory) {
                 button.classList.add("active");
             }
         });
-
-        const all = document.querySelectorAll(".portfolio");
-        all.forEach((element) => {
-            element.style.display = "block";
-        });
-
-        if (category !== "All") {
-            const filtered = document.querySelectorAll(`.portfolio:not(.${category})`);
-            filtered.forEach((element) => {
-                element.style.display = "none";
-            });
-        }
     }
 
-    const buttons = document.querySelectorAll(".category-button");
     buttons.forEach((button) => {
         button.addEventListener("click", hideInitiatives);
     });

@@ -29,7 +29,7 @@ const { category, title, link, tools, overview } = Astro.props;
             )
         }
         {link && <span class="hidden md:order-2 md:inline-block">•</span>}
-        <span class="flex flex-wrap order-1 gap-2 md:order-3">
+        <span class="flex flex-wrap order-1 gap-4 md:order-3">
             {tools.map((tool: string) => <span>{tool}</span>)}
         </span>
     </div>

@@ -2,7 +2,7 @@
 order: 7
 title: "Guest Checkout Implementation"
 subtitle: "Removing account creation friction in checkout"
-category: "Ecommerce"
+category: "Beauty & Cosmetics"
 tools: [Shopify]
 overview: "Introduced guest checkout to reduce friction and allow users to complete purchases without creating an account."
 challenge: "Mandatory account creation created a barrier in the checkout flow, increasing cart abandonment."

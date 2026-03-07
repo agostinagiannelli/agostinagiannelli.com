@@ -2,7 +2,7 @@
 order: 8
 title: "Delivery Countdown Timer A/B Test"
 subtitle: "Using urgency to accelerate purchase decisions"
-category: "Ecommerce"
+category: "Beauty & Cosmetics"
 tools: [Shopify]
 overview: "Tested countdown timers highlighting delivery cut-off times to create urgency and drive faster purchase decisions."
 challenge: "Users delayed completing purchases due to uncertainty around delivery timelines."
